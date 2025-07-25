@@ -1,0 +1,25 @@
+# Ignore python cache files
+__pycache__/
+*.pyc
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore catboost training information
+catboost_info/
+
+# Ignore large data files
+*.dst
+*.root
+
+# Ignore build artifacts and directories
+*.so
+**/build.x86_64_v3-el9-gcc13+detdesc-opt+g/
+
+
+**/lhcb-metainfo/
+
+

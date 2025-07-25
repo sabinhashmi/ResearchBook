@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE extension  PUBLIC '-//QM/2.3/Extension//EN'  'http://www.codesourcery.com/qm/dtds/2.3/-//qm/2.3/extension//en.dtd'>
+<!--
+    (c) Copyright 2021 CERN for the benefit of the LHCb Collaboration
+
+    This software is distributed under the terms of the GNU General Public
+    Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".
+
+    In applying this licence, CERN does not waive the privileges and immunities
+    granted to it by virtue of its status as an Intergovernmental Organization
+    or submit itself to any jurisdiction.
+-->
+<!--
+A counter-based internal consistenty test of vertex converters.
+-->
+<extension class="GaudiTest.GaudiExeTest" kind="test">
+<argument name="program"><text>gaudirun.py</text></argument>
+<argument name="args"><set>
+  <text>../options/convert_RecVertices.py</text>
+</set></argument>
+<argument name="validator"><text>
+# Check that:
+#   1. Counters are present for PatPV3DFuture,
+#        LHCb__Converters__RecVertex__v1__fromRecVertexv2RecVertexv1, and
+#        LHCb__Converters__RecVertex__v2__fromRecVertexv1RecVertexv2,
+#   2. The counters for the numbers of converted vertices are the same as
+#        that for the initial PatPV3DFuture construction.
+
+from GaudiConf.QMTest.LHCbTest import extract_counters
+from PyConf.components import findCounters
+
+ctrs = extract_counters(stdout)
+
+init_keys = ['PatPV3DFuture', 'Nb PVs']
+v1_keys = ['LHCb__Converters__RecVertex__v1_...', 'Nb of converted Vertices']
+v2_keys = ['LHCb__Converters__RecVertex__v2_...', 'Nb of converted Vertices']
+
+nvs_0 = -1
+try:
+    cs = findCounters(ctrs, init_keys[0])
+    if init_keys[1] in cs:
+        nvs_0 = int(cs[init_keys[1]][1])
+    else:
+        causes.append('expected counters called "{}" for {}'.format(
+            init_keys[1], init_keys[0]))
+except Exception:
+    causes.append('expected counters for ' + init_keys[0])
+
+if v1_keys[0] in ctrs:
+    if v1_keys[1] in ctrs[v1_keys[0]]:
+        nvs_v1 = int(ctrs[v1_keys[0]][v1_keys[1]][1])
+        if not nvs_0 == nvs_v1:
+            causes.append('expected all vertexes to be converted by ' +
+                          v1_keys[0])
+    else:
+        causes.append('expected counters called "{}" for {}'.format(
+            v1_keys[1], v1_keys[0]))
+else:
+    causes.append('expected counters for ' + v1_keys[0])
+
+if v2_keys[0] in ctrs:
+    if v2_keys[1] in ctrs[v2_keys[0]]:
+        nvs_v2 = int(ctrs[v2_keys[0]][v2_keys[1]][1])
+        if not nvs_0 == nvs_v2:
+            causes.append('expected all vertexes to be converted by ' +
+                          v2_keys[0])
+    else:
+        causes.append('expected counters called "{}" for {}'.format(
+            v2_keys[1], v2_keys[0]))
+else:
+    causes.append('expected counters for ' + v2_keys[0])
+</text></argument>
+</extension>

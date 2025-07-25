@@ -1,0 +1,26 @@
+# Input DST file
+input_files:
+  - "/afs/cern.ch/work/s/skalavan/HLT2Trigger/Data/01_Baseline/MooreOutput.dst"
+input_manifest_file: "/afs/cern.ch/work/s/skalavan/HLT2Trigger/Data/01_Baseline/MooreManifest.tck.json"
+
+# File types
+input_type: ROOT
+output_type: ROOT
+
+# Data type
+simulation: true
+data_type: 'Upgrade'
+
+# Database tags (required for simulation)
+conddb_tag: sim-20180530-vc-md100
+dddb_tag: dddb-20190223
+
+# Input process type (where to look for particles)
+input_process: Hlt2
+
+# Output files
+ntuple_file: ks0_mass.root
+
+# Control settings
+evt_max: -1
+print_freq: 10

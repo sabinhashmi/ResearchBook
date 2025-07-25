@@ -1,0 +1,6 @@
+/InstallArea/
+/build.*/
+*.pyc
+*~
+.*.swp
+/.clang-format

@@ -1,0 +1,90 @@
+/***** User ApplicationOptions/ApplicationOptions **************************************************
+|-append_decoding_keys_to_output_manifest = True  (default: True)
+|-auditors                                = []  (default: [])
+|-conddb_tag                              = 'sim-20171127-vc-md100'  (default: '')
+|-conditions_version                      = 'master'  (default: '')
+|-control_flow_file                       = ''  (default: '')
+|-data_flow_file                          = ''  (default: '')
+|-data_type                               = 'Upgrade'  (default: 'Upgrade')
+|-dddb_tag                                = 'dddb-20171126'  (default: '')
+|-event_store                             = 'HiveWhiteBoard'  (default: 'HiveWhiteBoard')
+|-evt_max                                 = 100  (default: -1)
+|-first_evt                               = 0  (default: 0)
+|-force_odin                              = False  (default: False)
+|-gaudipython_mode                        = False  (default: False)
+|-geometry_backend                        = 'DD4Hep'  (default: 'DD4Hep')
+|-geometry_version                        = 'run3/trunk'  (default: '')
+|-histo_calo                              = False  (default: False)
+|-histo_file                              = ''  (default: '')
+|-histo_string_width                      = 80  (default: 80)
+|-input_files                             = ['root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00004602_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00004625_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00005065_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00005143_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00005582_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00005592_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006124_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006137_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006187_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006191_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006211_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006220_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00006746_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007043_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007187_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007259_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007332_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007348_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007357_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007389_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007409_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007441_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007457_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007519_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007578_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007641_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007658_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007932_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00007952_1.ldst', 'root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00008351_1.ldst']
+|                                         (default: [])
+|-input_manifest_file                     = ''  (default: '')
+|-input_process                           = ''  (default: '')
+|-input_raw_format                        = 0.5  (default: 0.5)
+|-input_stream                            = ''  (default: '')
+|-input_streams_attributes_file           = ''  (default: '')
+|-input_type                              = 'ROOT'  (default: '')
+|-ioalg_buffer_nb_events                  = 40  (default: 40)
+|-lines_maker                             = None
+|-mdf_ioalg_name                          = 'IOAlgFileRead'  (default: 'IOAlgFileRead')
+|-memory_pool_size                        = 10485760  (default: 10485760)
+|-monitoring_file                         = ''  (default: '')
+|-msg_svc_format                          = '% F%35W%S %7W%R%T %0W%M'  (default: '% F%35W%S %7W%R%T %0W%M')
+|-msg_svc_time_format                     = '%Y-%m-%d %H:%M:%S UTC'  (default: '%Y-%m-%d %H:%M:%S UTC')
+|-n_event_slots                           = 1  (default: -1)
+|-n_threads                               = 1  (default: 1)
+|-ntuple_basketsize                       = 32000  (default: 32000)
+|-ntuple_file                             = ''  (default: '')
+|-output_file                             = ''  (default: '')
+|-output_level                            = 3  (default: 3)
+|-output_manifest_file                    = ''  (default: '')
+|-output_streams_attributes_file          = 'line_attribute_dict.json'  (default: 'line_attribute_dict.json')
+|-output_type                             = ''  (default: '')
+|-persistreco_version                     = 1.0  (default: 1.0)
+|-phoenix_filename                        = ''  (default: '')
+|-preamble_algs                           = []  (default: [])
+|-print_freq                              = 10000  (default: 10000)
+|-process                                 = None
+|-python_logging_level                    = 20  (default: 20)
+|-require_specific_decoding_keys          = []  (default: [])
+|-root_ioalg_name                         = 'RootIOAlg'  (default: 'RootIOAlg')
+|-root_ioalg_opts                         = {}  (default: {})
+|-scheduler_legacy_mode                   = True  (default: True)
+|-simulation                              = True  (default: None)
+|-write_decoding_keys_to_git              = None
+|-write_options_to_fsr                    = False  (default: False)
+|-write_streams_attributes_to_json        = False  (default: False)
+|-xml_file_catalog                        = ''  (default: '')
+|-xml_summary_file                        = ''  (default: '')
+|-xml_summary_svc                         = 'XMLSummarySvc'  (default: 'XMLSummarySvc')
+\----- (End of User ApplicationOptions/ApplicationOptions) -----------------------------------------
+ApplicationMgr    SUCCESS
+====================================================================================================================================
+====================================================================================================================================
+ApplicationMgr       INFO Application Manager Configured successfully
+HLTControlFlowMgr                      INFO Start initialization
+HLTControlFlowMgr                      INFO Will not use an EventSelector.
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00004602_1.ldst'
+HLTControlFlowMgr                      INFO Concurrency level information:
+HLTControlFlowMgr                      INFO  o Number of events slots: 1
+HLTControlFlowMgr                      INFO  o TBB thread pool size:  'ThreadPoolSize':1
+ApplicationMgr                         INFO Application Manager Initialized successfully
+ApplicationMgr                         INFO Application Manager Started successfully
+HLTControlFlowMgr                      INFO Will measure time between events 10 and 90 (stop might be some events later)
+HLTControlFlowMgr                      INFO Starting loop on events
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb//lhcb/MC/Upgrade/LDST/00075219/0000/00075219_00004602_1.ldst
+ApplicationMgr                         INFO Application Manager Stopped successfully
+HLTControlFlowMgr                      INFO
+HLTControlFlowMgr                      INFO StateTree: CFNode   #executed  #passed
+LAZY_AND: test                                                            #=100     Sum=100         Eff=|( 100.0000 +- 0.00000 )%|
+ LHCb::Converters::Track::v1::fromV2TrackV1Track/TrackConverter_v2_to_v1  #=100     Sum=100         Eff=|( 100.0000 +- 0.00000 )%|
+HLTControlFlowMgr                      INFO Histograms converted successfully according to request.
+ApplicationMgr                         INFO Application Manager Finalized successfully
+ApplicationMgr                         INFO Application Manager Terminated successfully
+HLTControlFlowMgr                      INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Processed events"                              |       100 |
+UnpackTrack_4161e32c                   INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# UnPackedData"                                |       100 |      50021 |     500.21 |     266.94 |      45.000 |      1409.0 |

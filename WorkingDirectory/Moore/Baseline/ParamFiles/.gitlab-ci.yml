@@ -1,0 +1,20 @@
+stages:
+  - test
+  - deploy_datapkg
+
+include:
+  - project: 'lhcb-core/ci-utils'
+    ref: master
+    file: '/data-pkg-deployment/build-and-deploy.yml'
+
+variables:
+  TARGET_BRANCH: master
+
+test-allowed-changes:
+  stage: test
+  script:
+    - git --version
+    - if ! git diff --no-renames --diff-filter=DM --exit-code --check origin/${TARGET_BRANCH}...HEAD data/ ; then
+    -   echo "Data files should not be modified or removed:"
+    -   git diff --no-renames --diff-filter=DM --exit-code --name-status origin/${TARGET_BRANCH}...HEAD data/
+    - fi

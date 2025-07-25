@@ -1,0 +1,110 @@
+{
+    "PackedLocations": [
+        [
+            "/Event/HLT2/Rec/Track/BestDownstream",
+            "KeyedContainer<LHCb::Event::v1::Track,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Track/BestLong",
+            "KeyedContainer<LHCb::Event::v1::Track,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Track/BestUpstream",
+            "KeyedContainer<LHCb::Event::v1::Track,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Track/Ttrack",
+            "KeyedContainer<LHCb::Event::v1::Track,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Track/Velo",
+            "KeyedContainer<LHCb::Event::v1::Track,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/ProtoP/Neutrals",
+            "KeyedContainer<LHCb::ProtoParticle,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/ProtoP/Upstream",
+            "KeyedContainer<LHCb::ProtoParticle,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/ProtoP/Long",
+            "KeyedContainer<LHCb::ProtoParticle,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/ProtoP/Downstream",
+            "KeyedContainer<LHCb::ProtoParticle,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Calo/SplitPhotons",
+            "KeyedContainer<LHCb::CaloHypo,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Calo/Electrons",
+            "KeyedContainer<LHCb::CaloHypo,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Calo/Photons",
+            "KeyedContainer<LHCb::CaloHypo,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Calo/MergedPi0s",
+            "KeyedContainer<LHCb::CaloHypo,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Vertex/Primary",
+            "KeyedContainer<LHCb::RecVertex,Containers::KeyedObjectManager<Containers::hashmap> >"
+        ],
+        [
+            "/Event/HLT2/Rec/Summary",
+            "LHCb::RecSummary"
+        ],
+        [
+            "/Event/HLT2/Hlt2PersistReco_KS0LLParticles/Particles",
+            "SharedObjectsContainer<LHCb::Particle>"
+        ],
+        [
+            "/Event/HLT2/Relations/ChargedPP2MCP",
+            "LHCb::RelationWeighted1D<LHCb::ProtoParticle,LHCb::MCParticle,double>"
+        ],
+        [
+            "/Event/HLT2/Relations/NeutralPP2MCP",
+            "LHCb::RelationWeighted1D<LHCb::ProtoParticle,LHCb::MCParticle,double>"
+        ]
+    ],
+    "DecodingKeys": {
+        "0xcd08a464": {
+            "Hlt2SelectionID": {
+                "1": "Hlt2DebugTrackingDecision",
+                "2": "Hlt2PersistReco_KS0LLParticlesDecision"
+            },
+            "version": "0"
+        },
+        "0xe42f7f5b": {
+            "PackedObjectLocations": {
+                "1": "/Event/HLT2/Hlt2PersistReco_KS0LLParticles/Particles",
+                "2": "/Event/HLT2/MC/Particles",
+                "3": "/Event/HLT2/MC/Vertices",
+                "4": "/Event/HLT2/Rec/Calo/Electrons",
+                "5": "/Event/HLT2/Rec/Calo/MergedPi0s",
+                "6": "/Event/HLT2/Rec/Calo/Photons",
+                "7": "/Event/HLT2/Rec/Calo/SplitPhotons",
+                "8": "/Event/HLT2/Rec/ProtoP/Downstream",
+                "9": "/Event/HLT2/Rec/ProtoP/Long",
+                "10": "/Event/HLT2/Rec/ProtoP/Neutrals",
+                "11": "/Event/HLT2/Rec/ProtoP/Upstream",
+                "12": "/Event/HLT2/Rec/Summary",
+                "13": "/Event/HLT2/Rec/Track/BestDownstream",
+                "14": "/Event/HLT2/Rec/Track/BestLong",
+                "15": "/Event/HLT2/Rec/Track/BestUpstream",
+                "16": "/Event/HLT2/Rec/Track/Ttrack",
+                "17": "/Event/HLT2/Rec/Track/Velo",
+                "18": "/Event/HLT2/Rec/Vertex/Primary",
+                "19": "/Event/HLT2/Relations/ChargedPP2MCP",
+                "20": "/Event/HLT2/Relations/NeutralPP2MCP"
+            },
+            "version": "0"
+        }
+    }
+}
