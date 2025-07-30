@@ -1,0 +1,199 @@
+strict digraph control_flow {
+compound=True;
+label="Control flow generated at Tue Jul 29 04:51:34 2025";
+subgraph cluster_moore {
+label=<<B>moore</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+subgraph cluster_lines {
+label=<<B>lines</B><BR/>NONLAZY_OR, ordered>;
+edge [dir=forward];
+subgraph cluster_hlt_decision {
+label=<<B>hlt_decision</B><BR/>NONLAZY_OR, unordered>;
+edge [dir=none];
+subgraph cluster_Hlt2DebugTrackingDecisionWithOutput {
+label=<<B>Hlt2DebugTrackingDecisionWithOutput</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+subgraph cluster_Hlt2DebugTracking {
+label=<<B>Hlt2DebugTracking</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+"Hlt2DebugTracking_DeterministicPrescaler/Hlt2DebugTracking_Prescaler" [label="DeterministicPrescaler/Hlt2DebugTracking_Prescaler"];
+"Hlt2DebugTracking_VoidFilter/require_pvs" [label="VoidFilter/require_pvs"];
+"Hlt2DebugTracking_DeterministicPrescaler/Hlt2DebugTracking_Prescaler" -> "Hlt2DebugTracking_VoidFilter/require_pvs";
+"Hlt2DebugTracking_PrTrackChecker/SeedTrackChecker_98e00013" [label="PrTrackChecker/SeedTrackChecker_98e00013"];
+"Hlt2DebugTracking_VoidFilter/require_pvs" -> "Hlt2DebugTracking_PrTrackChecker/SeedTrackChecker_98e00013";
+"Hlt2DebugTracking_PrTrackChecker/DownstreamTrackChecker_7ff09506" [label="PrTrackChecker/DownstreamTrackChecker_7ff09506"];
+"Hlt2DebugTracking_PrTrackChecker/SeedTrackChecker_98e00013" -> "Hlt2DebugTracking_PrTrackChecker/DownstreamTrackChecker_7ff09506";
+"Hlt2DebugTracking_PrTrackRecoDumper/PrTrackRecoDumper_1e319109" [label="PrTrackRecoDumper/PrTrackRecoDumper_1e319109"];
+"Hlt2DebugTracking_PrTrackChecker/DownstreamTrackChecker_7ff09506" -> "Hlt2DebugTracking_PrTrackRecoDumper/PrTrackRecoDumper_1e319109";
+}
+
+subgraph cluster_Hlt2DebugTrackingOutput {
+label=<<B>Hlt2DebugTrackingOutput</B><BR/>NONLAZY_OR, unordered>;
+edge [dir=none];
+"Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac" [label="TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac"];
+"Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4" [label="TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4"];
+"Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac" -> "Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4";
+"Hlt2DebugTrackingOutput_PVToRecConverterV1/PVToRecConverterV1_23c1b43a" [label="PVToRecConverterV1/PVToRecConverterV1_23c1b43a"];
+"Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4" -> "Hlt2DebugTrackingOutput_PVToRecConverterV1/PVToRecConverterV1_23c1b43a";
+"Hlt2DebugTrackingOutput_NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34" [label="NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34"];
+"Hlt2DebugTrackingOutput_PVToRecConverterV1/PVToRecConverterV1_23c1b43a" -> "Hlt2DebugTrackingOutput_NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34";
+"Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa" [label="TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa"];
+"Hlt2DebugTrackingOutput_NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34" -> "Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa";
+"Hlt2DebugTrackingOutput_TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923" [label="TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923"];
+"Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa" -> "Hlt2DebugTrackingOutput_TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923";
+"Hlt2DebugTrackingOutput_TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3" [label="TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3"];
+"Hlt2DebugTrackingOutput_TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923" -> "Hlt2DebugTrackingOutput_TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3";
+"Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181" [label="FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181"];
+"Hlt2DebugTrackingOutput_TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3" -> "Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181";
+"Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad" [label="FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad"];
+"Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181" -> "Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad";
+"Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73" [label="FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73"];
+"Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad" -> "Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73";
+Hlt2DebugTrackingOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::fromV2/LHCb__Converters__Calo__Hypo__v1__fromV2_54cd4a77"];
+"Hlt2DebugTrackingOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73" -> Hlt2DebugTrackingOutput_LHCb;
+Hlt2DebugTrackingOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::fromV2/LHCb__Converters__Calo__Hypo__v1__fromV2_ff1882d3"];
+Hlt2DebugTrackingOutput_LHCb -> Hlt2DebugTrackingOutput_LHCb;
+Hlt2DebugTrackingOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::MergedPi0::fromV2/LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2_66dc1a91"];
+Hlt2DebugTrackingOutput_LHCb -> Hlt2DebugTrackingOutput_LHCb;
+Hlt2DebugTrackingOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::MergedPi0::fromV2/LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2_66dc1a91"];
+Hlt2DebugTrackingOutput_LHCb -> Hlt2DebugTrackingOutput_LHCb;
+"Hlt2DebugTrackingOutput_RecSummaryMaker/RecSummaryMaker_85e74d24" [label="RecSummaryMaker/RecSummaryMaker_85e74d24"];
+Hlt2DebugTrackingOutput_LHCb -> "Hlt2DebugTrackingOutput_RecSummaryMaker/RecSummaryMaker_85e74d24";
+}
+
+"Hlt2DebugTracking_DeterministicPrescaler/Hlt2DebugTracking_Prescaler" -> "Hlt2DebugTrackingOutput_TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac"  [lhead=cluster_Hlt2DebugTrackingOutput, ltail=cluster_Hlt2DebugTracking];
+}
+
+subgraph cluster_Hlt2PersistReco_KS0LLParticlesDecisionWithOutput {
+label=<<B>Hlt2PersistReco_KS0LLParticlesDecisionWithOutput</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+subgraph cluster_Hlt2PersistReco_KS0LLParticles {
+label=<<B>Hlt2PersistReco_KS0LLParticles</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+"Hlt2PersistReco_KS0LLParticles_DeterministicPrescaler/Hlt2PersistReco_KS0LLParticles_Prescaler" [label="DeterministicPrescaler/Hlt2PersistReco_KS0LLParticles_Prescaler"];
+"Hlt2PersistReco_KS0LLParticles_VoidFilter/require_pvs" [label="VoidFilter/require_pvs"];
+"Hlt2PersistReco_KS0LLParticles_DeterministicPrescaler/Hlt2PersistReco_KS0LLParticles_Prescaler" -> "Hlt2PersistReco_KS0LLParticles_VoidFilter/require_pvs";
+"Hlt2PersistReco_KS0LLParticles_TwoBodyCombiner/TwoBodyCombiner_4f0f17a6" [label="TwoBodyCombiner/TwoBodyCombiner_4f0f17a6"];
+"Hlt2PersistReco_KS0LLParticles_VoidFilter/require_pvs" -> "Hlt2PersistReco_KS0LLParticles_TwoBodyCombiner/TwoBodyCombiner_4f0f17a6";
+"Hlt2PersistReco_KS0LLParticles_Monitor__ParticleRange/Monitor__Hlt2PersistReco_KS0LLParticles" [label="Monitor__ParticleRange/Monitor__Hlt2PersistReco_KS0LLParticles"];
+"Hlt2PersistReco_KS0LLParticles_TwoBodyCombiner/TwoBodyCombiner_4f0f17a6" -> "Hlt2PersistReco_KS0LLParticles_Monitor__ParticleRange/Monitor__Hlt2PersistReco_KS0LLParticles";
+"Hlt2PersistReco_KS0LLParticles_Monitor__Global/GlobalMonitor__Hlt2PersistReco_KS0LLParticles" [label="Monitor__Global/GlobalMonitor__Hlt2PersistReco_KS0LLParticles"];
+"Hlt2PersistReco_KS0LLParticles_Monitor__ParticleRange/Monitor__Hlt2PersistReco_KS0LLParticles" -> "Hlt2PersistReco_KS0LLParticles_Monitor__Global/GlobalMonitor__Hlt2PersistReco_KS0LLParticles";
+}
+
+subgraph cluster_Hlt2PersistReco_KS0LLParticlesOutput {
+label=<<B>Hlt2PersistReco_KS0LLParticlesOutput</B><BR/>NONLAZY_OR, unordered>;
+edge [dir=none];
+"Hlt2PersistReco_KS0LLParticlesOutput_CopyParticles/Copy_Event_Hlt2PersistReco_KS0LLParticles_Particles" [label="CopyParticles/Copy_Event_Hlt2PersistReco_KS0LLParticles_Particles"];
+"Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac" [label="TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac"];
+"Hlt2PersistReco_KS0LLParticlesOutput_CopyParticles/Copy_Event_Hlt2PersistReco_KS0LLParticles_Particles" -> "Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac";
+"Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4" [label="TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4"];
+"Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableVeloTracksContainer_c3b6d9ac" -> "Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4";
+"Hlt2PersistReco_KS0LLParticlesOutput_PVToRecConverterV1/PVToRecConverterV1_23c1b43a" [label="PVToRecConverterV1/PVToRecConverterV1_23c1b43a"];
+"Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableTtrackTracksContainer_e6baabe4" -> "Hlt2PersistReco_KS0LLParticlesOutput_PVToRecConverterV1/PVToRecConverterV1_23c1b43a";
+"Hlt2PersistReco_KS0LLParticlesOutput_NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34" [label="NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34"];
+"Hlt2PersistReco_KS0LLParticlesOutput_PVToRecConverterV1/PVToRecConverterV1_23c1b43a" -> "Hlt2PersistReco_KS0LLParticlesOutput_NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34";
+"Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa" [label="TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa"];
+"Hlt2PersistReco_KS0LLParticlesOutput_NeutralProtoPAlg/NeutralProtoPAlg_ddd3aa34" -> "Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa";
+"Hlt2PersistReco_KS0LLParticlesOutput_TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923" [label="TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923"];
+"Hlt2PersistReco_KS0LLParticlesOutput_TrackContainersMerger/PersistableLongTracksContainer_1d3d29aa" -> "Hlt2PersistReco_KS0LLParticlesOutput_TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923";
+"Hlt2PersistReco_KS0LLParticlesOutput_TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3" [label="TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3"];
+"Hlt2PersistReco_KS0LLParticlesOutput_TracksEmptyProducer/PersistableDownstreamEmptyTracksContainer_d73d0923" -> "Hlt2PersistReco_KS0LLParticlesOutput_TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3";
+"Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181" [label="FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181"];
+"Hlt2PersistReco_KS0LLParticlesOutput_TracksEmptyProducer/PersistableUpstreamEmptyTracksContainer_253dd5a3" -> "Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181";
+"Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad" [label="FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad"];
+"Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Long_eff94181" -> "Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad";
+"Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73" [label="FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73"];
+"Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Downstream_555b11ad" -> "Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73";
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::fromV2/LHCb__Converters__Calo__Hypo__v1__fromV2_54cd4a77"];
+"Hlt2PersistReco_KS0LLParticlesOutput_FunctionalChargedProtoParticleMaker/ChargedProtoParticleMaker_Upstream_9b183f73" -> Hlt2PersistReco_KS0LLParticlesOutput_LHCb;
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::fromV2/LHCb__Converters__Calo__Hypo__v1__fromV2_ff1882d3"];
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb -> Hlt2PersistReco_KS0LLParticlesOutput_LHCb;
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::MergedPi0::fromV2/LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2_66dc1a91"];
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb -> Hlt2PersistReco_KS0LLParticlesOutput_LHCb;
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb [label="LHCb::Converters::Calo::Hypo::v1::MergedPi0::fromV2/LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2_66dc1a91"];
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb -> Hlt2PersistReco_KS0LLParticlesOutput_LHCb;
+"Hlt2PersistReco_KS0LLParticlesOutput_RecSummaryMaker/RecSummaryMaker_85e74d24" [label="RecSummaryMaker/RecSummaryMaker_85e74d24"];
+Hlt2PersistReco_KS0LLParticlesOutput_LHCb -> "Hlt2PersistReco_KS0LLParticlesOutput_RecSummaryMaker/RecSummaryMaker_85e74d24";
+}
+
+"Hlt2PersistReco_KS0LLParticles_DeterministicPrescaler/Hlt2PersistReco_KS0LLParticles_Prescaler" -> "Hlt2PersistReco_KS0LLParticlesOutput_CopyParticles/Copy_Event_Hlt2PersistReco_KS0LLParticles_Particles"  [lhead=cluster_Hlt2PersistReco_KS0LLParticlesOutput, ltail=cluster_Hlt2PersistReco_KS0LLParticles];
+}
+
+"Hlt2DebugTracking_DeterministicPrescaler/Hlt2DebugTracking_Prescaler" -> "Hlt2PersistReco_KS0LLParticles_DeterministicPrescaler/Hlt2PersistReco_KS0LLParticles_Prescaler"  [lhead=cluster_Hlt2PersistReco_KS0LLParticlesDecisionWithOutput, ltail=cluster_Hlt2DebugTrackingDecisionWithOutput];
+}
+
+subgraph cluster_monitor_decisions {
+label=<<B>monitor_decisions</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+"monitor_decisions_DeterministicPrescaler/HLT2PrescaleDecReportsMonitor" [label="DeterministicPrescaler/HLT2PrescaleDecReportsMonitor"];
+"monitor_decisions_HltDecReportsMonitor/HLT2DecReportsMonitor" [label="HltDecReportsMonitor/HLT2DecReportsMonitor"];
+"monitor_decisions_DeterministicPrescaler/HLT2PrescaleDecReportsMonitor" -> "monitor_decisions_HltDecReportsMonitor/HLT2DecReportsMonitor";
+"monitor_decisions_DeterministicPrescaler/HLT2PostscaleDecReportsMonitor" [label="DeterministicPrescaler/HLT2PostscaleDecReportsMonitor"];
+"monitor_decisions_HltDecReportsMonitor/HLT2DecReportsMonitor" -> "monitor_decisions_DeterministicPrescaler/HLT2PostscaleDecReportsMonitor";
+}
+
+"Hlt2DebugTracking_DeterministicPrescaler/Hlt2DebugTracking_Prescaler" -> "monitor_decisions_DeterministicPrescaler/HLT2PrescaleDecReportsMonitor"  [lhead=cluster_monitor_decisions, ltail=cluster_hlt_decision];
+}
+
+subgraph cluster_report_writers {
+label=<<B>report_writers</B><BR/>NONLAZY_OR, ordered>;
+edge [dir=forward];
+"report_writers_ExecutionReportsWriter/ExecutionReportsWriter_23391028" [label="ExecutionReportsWriter/ExecutionReportsWriter_23391028"];
+"report_writers_HltDecReportsWriter/HltDecReportsWriter_168885da" [label="HltDecReportsWriter/HltDecReportsWriter_168885da"];
+"report_writers_ExecutionReportsWriter/ExecutionReportsWriter_23391028" -> "report_writers_HltDecReportsWriter/HltDecReportsWriter_168885da";
+}
+
+"Hlt2DebugTracking_DeterministicPrescaler/Hlt2DebugTracking_Prescaler" -> "report_writers_ExecutionReportsWriter/ExecutionReportsWriter_23391028"  [lhead=cluster_report_writers, ltail=cluster_lines];
+subgraph cluster_stream_writers {
+label=<<B>stream_writers</B><BR/>NONLAZY_OR, unordered>;
+edge [dir=none];
+subgraph cluster_default_writer {
+label=<<B>default_writer</B><BR/>LAZY_AND, ordered>;
+edge [dir=forward];
+"default_writer_HltDecReportsFilter/HltDecReportsFilter_aabda98f" [label="HltDecReportsFilter/HltDecReportsFilter_aabda98f"];
+subgraph cluster_default_line_output_persistence {
+label=<<B>default_line_output_persistence</B><BR/>NONLAZY_OR, ordered>;
+edge [dir=forward];
+subgraph cluster_truth_matching {
+label=<<B>truth_matching</B><BR/>NONLAZY_OR, ordered>;
+edge [dir=forward];
+"truth_matching_MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_ChargedPP2MCP" [label="MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_ChargedPP2MCP"];
+"truth_matching_MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_NeutralPP2MCP" [label="MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_NeutralPP2MCP"];
+"truth_matching_MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_ChargedPP2MCP" -> "truth_matching_MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_NeutralPP2MCP";
+}
+
+subgraph cluster_mc_packers {
+label=<<B>mc_packers</B><BR/>NONLAZY_OR, ordered>;
+edge [dir=forward];
+"mc_packers_CopyMCRelationsTargets/Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP" [label="CopyMCRelationsTargets/Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP"];
+"mc_packers_CopySignalMCParticles/CopySignalMCParticles_daf3c6a8" [label="CopySignalMCParticles/CopySignalMCParticles_daf3c6a8"];
+"mc_packers_CopyMCRelationsTargets/Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP" -> "mc_packers_CopySignalMCParticles/CopySignalMCParticles_daf3c6a8";
+"mc_packers_PackMCParticle/Pack__Event_HLT2_MC_Particles" [label="PackMCParticle/Pack__Event_HLT2_MC_Particles"];
+"mc_packers_CopySignalMCParticles/CopySignalMCParticles_daf3c6a8" -> "mc_packers_PackMCParticle/Pack__Event_HLT2_MC_Particles";
+"mc_packers_PackMCVertex/Pack__Event_HLT2_MC_Vertices" [label="PackMCVertex/Pack__Event_HLT2_MC_Vertices"];
+"mc_packers_PackMCParticle/Pack__Event_HLT2_MC_Particles" -> "mc_packers_PackMCVertex/Pack__Event_HLT2_MC_Vertices";
+}
+
+"truth_matching_MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_ChargedPP2MCP" -> "mc_packers_CopyMCRelationsTargets/Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP"  [lhead=cluster_mc_packers, ltail=cluster_truth_matching];
+"default_line_output_persistence_HltPackedBufferWriter/HltPackedBufferWriter_e6c08b43" [label="HltPackedBufferWriter/HltPackedBufferWriter_e6c08b43"];
+"mc_packers_CopyMCRelationsTargets/Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP" -> "default_line_output_persistence_HltPackedBufferWriter/HltPackedBufferWriter_e6c08b43"  [ltail=cluster_mc_packers];
+}
+
+"default_writer_HltDecReportsFilter/HltDecReportsFilter_aabda98f" -> "default_line_output_persistence_HltPackedBufferWriter/HltPackedBufferWriter_e6c08b43"  [lhead=cluster_default_line_output_persistence];
+"default_writer_SelectiveCombineRawBankViewsToRawEvent/SelectiveCombineRawBanks_for_default" [label="SelectiveCombineRawBankViewsToRawEvent/SelectiveCombineRawBanks_for_default"];
+"default_line_output_persistence_HltPackedBufferWriter/HltPackedBufferWriter_e6c08b43" -> "default_writer_SelectiveCombineRawBankViewsToRawEvent/SelectiveCombineRawBanks_for_default"  [ltail=cluster_default_line_output_persistence];
+"default_writer_RawEventSimpleMover/RawEventSimpleMover_6c47dc25" [label="RawEventSimpleMover/RawEventSimpleMover_6c47dc25"];
+"default_writer_SelectiveCombineRawBankViewsToRawEvent/SelectiveCombineRawBanks_for_default" -> "default_writer_RawEventSimpleMover/RawEventSimpleMover_6c47dc25";
+"default_writer_AddressKillerAlg/AddressKillerAlg_5d7e77b6" [label="AddressKillerAlg/AddressKillerAlg_5d7e77b6"];
+"default_writer_RawEventSimpleMover/RawEventSimpleMover_6c47dc25" -> "default_writer_AddressKillerAlg/AddressKillerAlg_5d7e77b6";
+"default_writer_CopyInputStream/CopyInputStream" [label="CopyInputStream/CopyInputStream"];
+"default_writer_AddressKillerAlg/AddressKillerAlg_5d7e77b6" -> "default_writer_CopyInputStream/CopyInputStream";
+}
+
+}
+
+"report_writers_ExecutionReportsWriter/ExecutionReportsWriter_23391028" -> "default_writer_HltDecReportsFilter/HltDecReportsFilter_aabda98f"  [lhead=cluster_stream_writers, ltail=cluster_report_writers];
+}
+
+}

@@ -1,0 +1,39 @@
+#!/bin/sh
+
+root_dir=$(dirname $0)
+
+# Get build configuration parameters
+. ${root_dir}/build.conf
+
+if [ -z "${BINARY_TAG}" ] ; then
+  export BINARY_TAG=${CMTCONFIG:-${platform}}
+fi
+if [ -z "${CMTCONFIG}" ] ; then
+  export CMTCONFIG=${BINARY_TAG:-${platform}}
+fi
+if [ "${BINARY_TAG}" != "${CMTCONFIG}" ] ; then
+  echo "error: invalid environment: inconsistent values for BINARY_TAG and CMTCONFIG"
+  exit 1
+fi
+
+if [ "$build_tool" = "cmake" ] ; then
+  run_cmd=${root_dir}/build.$BINARY_TAG/run
+  if [ ! -e "$run_cmd" ] ; then
+    echo "error: cannot find build.$BINARY_TAG/run, did you build?"
+    exit 1
+  fi
+else
+  curdir=$(pwd)
+  cd ${root_dir}
+  if [ -r ./build_env.sh ] ; then
+    . ./build_env.sh
+  fi
+  cd $curdir
+  run_cmd="lb-run"
+  if [ "$nightly_slot" != "" ] ; then
+    run_cmd+=" --nightly ${nightly_slot}/${nightly_day}"
+  fi
+  run_cmd+=" --user-area $(cd ${root_dir}/.. ; pwd) StandaloneModel"
+fi
+
+exec $run_cmd "$@"

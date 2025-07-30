@@ -1,9 +1,0 @@
-ModelNames,ROC,F1
-Logistic,66.72,77.95
-DecisionTree,64.5,76.88
-RandomForest,71.08,82.51
-GradientBoosting,71.39,83.74
-AdaBoost,69.62,82.45
-KNN,67.09,81.16
-MLP,69.88,85.69
-CatBoost,73.79,85.54

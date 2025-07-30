@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="03630644-6AED-11F0-A5C9-B8CEF6333B86">
+    <physical>
+      <pfn filetype="ROOT" name="MooreOutput.dst"/>
+    </physical>
+    <logical/>
+  </File>
+
+</POOLFILECATALOG>

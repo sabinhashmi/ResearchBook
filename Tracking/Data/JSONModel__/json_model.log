@@ -1,0 +1,911 @@
+# setting LC_ALL to "C"
+# --> Including file '/home/hashmi/ResearchBook/Tracking/Options/MooreOptions/AnalysisOptions.py'
+/***** User ApplicationOptions/ApplicationOptions **************************************************
+|-append_decoding_keys_to_output_manifest = True  (default: True)
+|-auditors                                = []  (default: [])
+|-conddb_tag                              = 'sim10-2024.Q1.2-v1.1-md100'  (default: '')
+|-conditions_version                      = ''  (default: '')
+|-control_flow_file                       = ''  (default: '')
+|-data_flow_file                          = ''  (default: '')
+|-data_type                               = 'Upgrade'  (default: 'Upgrade')
+|-dddb_tag                                = 'dddb-20240427'  (default: '')
+|-event_store                             = 'HiveWhiteBoard'  (default: 'HiveWhiteBoard')
+|-evt_max                                 = 50000  (default: -1)
+|-first_evt                               = 0  (default: 0)
+|-force_odin                              = False  (default: False)
+|-gaudipython_mode                        = False  (default: False)
+|-geometry_backend                        = 'DetDesc'  (default: 'DetDesc')
+|-geometry_version                        = ''  (default: '')
+|-histo_calo                              = False  (default: False)
+|-histo_file                              = ''  (default: '')
+|-histo_string_width                      = 80  (default: 80)
+|-input_files                             = ['root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000005_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000008_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000013_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000018_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000022_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000023_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000030_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000037_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000045_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000050_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000054_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000058_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000065_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000066_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000069_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000072_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000075_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000081_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000082_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000086_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000087_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000089_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000095_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000097_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000099_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000104_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000105_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000106_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000108_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000112_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000115_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000119_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000120_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000122_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000123_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000125_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000132_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000133_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000136_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000140_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000144_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000147_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000148_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000153_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000158_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000160_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000163_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000167_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000169_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000173_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000175_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000178_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000183_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000184_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000186_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000189_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000192_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000193_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000198_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000200_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000203_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000206_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000211_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000213_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000215_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000221_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000222_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000226_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000227_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000233_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000236_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000239_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000241_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000243_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000247_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000248_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000253_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000254_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000256_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000259_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000263_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000264_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000267_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000272_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000273_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000276_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000279_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000283_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000285_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000291_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000292_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000295_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000297_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000298_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000303_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000307_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000308_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000311_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000313_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000315_1.digi', 'root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000321_1.digi']
+|                                         (default: [])
+|-input_manifest_file                     = ''  (default: '')
+|-input_process                           = ''  (default: '')
+|-input_raw_format                        = 0.5  (default: 0.5)
+|-input_stream                            = ''  (default: '')
+|-input_streams_attributes_file           = ''  (default: '')
+|-input_type                              = 'ROOT'  (default: '')
+|-ioalg_buffer_nb_events                  = 40  (default: 40)
+|-lines_maker                             = None
+|-mdf_ioalg_name                          = 'IOAlgFileRead'  (default: 'IOAlgFileRead')
+|-memory_pool_size                        = 10485760  (default: 10485760)
+|-monitoring_file                         = ''  (default: '')
+|-msg_svc_format                          = '% F%35W%S %7W%R%T %0W%M'  (default: '% F%35W%S %7W%R%T %0W%M')
+|-msg_svc_time_format                     = '%Y-%m-%d %H:%M:%S UTC'  (default: '%Y-%m-%d %H:%M:%S UTC')
+|-n_event_slots                           = 1  (default: -1)
+|-n_threads                               = -1  (default: 1)
+|-ntuple_basketsize                       = 32000  (default: 32000)
+|-ntuple_file                             = ''  (default: '')
+|-output_file                             = ''  (default: '')
+|-output_level                            = 3  (default: 3)
+|-output_manifest_file                    = ''  (default: '')
+|-output_streams_attributes_file          = 'line_attribute_dict.json'  (default: 'line_attribute_dict.json')
+|-output_type                             = 'ROOT'  (default: '')
+|-persistreco_version                     = 0.0  (default: 1.0)
+|-phoenix_filename                        = ''  (default: '')
+|-preamble_algs                           = []  (default: [])
+|-print_freq                              = 10000  (default: 10000)
+|-process                                 = None
+|-python_logging_level                    = 20  (default: 20)
+|-require_specific_decoding_keys          = []  (default: [])
+|-root_ioalg_name                         = 'RootIOAlgExt'  (default: 'RootIOAlg')
+|-root_ioalg_opts                         = {'IgnorePaths': ['/Event/Rec/Summary']}  (default: {})
+|-scheduler_legacy_mode                   = True  (default: True)
+|-simulation                              = True  (default: None)
+|-velo_motion_system_yaml                 = ''  (default: '')
+|-write_decoding_keys_to_git              = None
+|-write_options_to_fsr                    = False  (default: False)
+|-write_streams_attributes_to_json        = False  (default: False)
+|-xml_file_catalog                        = ''  (default: '')
+|-xml_summary_file                        = ''  (default: '')
+|-xml_summary_svc                         = 'XMLSummarySvc'  (default: 'XMLSummarySvc')
+\----- (End of User ApplicationOptions/ApplicationOptions) -----------------------------------------
+# line module Hlt2Conf.lines.inclusive_detached_dilepton does not define `sprucing_lines`
+# line module Hlt2Conf.lines.topological_b does not define `sprucing_lines`
+# line module Hlt2Conf.lines.pid does not define `sprucing_lines`
+# line module Hlt2Conf.lines.charm does not define `sprucing_lines`
+# line module Hlt2Conf.lines.monitoring does not define `sprucing_lines`
+# line module Hlt2Conf.lines.charmonium_to_dimuon does not define `sprucing_lines`
+# line module Hlt2Conf.lines.trackeff does not define `sprucing_lines`
+# line module Hlt2Conf.lines.luminosity does not define `sprucing_lines`
+# line module Hlt2Conf.lines.nobias does not define `sprucing_lines`
+# line module Hlt2Conf.lines.calibration does not define `sprucing_lines`
+# WARNING: *** cloning metadata git repo into /home/hashmi/ResearchBook/Tracking/Data/JSONModel/lhcb-metainfo/.git
+# adding newly generated key 84a718f6 to registry
+# adding newly generated key 0889dbb8 to registry
+# Overrule specified for keys 0x84a718f6, 0x0889dbb8
+# <-- End of file '/home/hashmi/ResearchBook/Tracking/Options/MooreOptions/AnalysisOptions.py'
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to JSONModel version 0
+                                          running on lhcbd2 on Mon Jul 28 18:29:46 2025
+====================================================================================================================================
+ApplicationMgr       INFO Application Manager Configured successfully
+ToolSvc.GitDDDB                        INFO opening Git repository '/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/DDDB.git'
+ToolSvc.GitDDDB                        INFO using commit 'upgrade/dddb-20240427' corresponding to dc2b8e7a0dc9a9cb812fdd3217cd627aca43b286
+ToolSvc.GitSIMCOND                     INFO opening Git repository '/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/SIMCOND.git'
+ToolSvc.GitSIMCOND                     INFO using commit 'upgrade/sim10-2024.Q1.2-v1.1-md100' corresponding to f37a70247b4b15cf7c4aaa19cee1e8f694f4a2fb
+DetectorPersistencySvc                 INFO Added successfully Conversion service XmlCnvSvc
+DetectorDataSvc                     SUCCESS Detector description database: git:/lhcb.xml
+EventClockSvc.FakeEventTime            INFO Event times generated from 0 with steps of 0
+EventClockSvc.FakeEventTime            INFO Run numbers generated from 0 every 0 events
+MagneticFieldGridReader INFO  Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf//field.v5r0.c1.down.cdf
+MagneticFieldGridReader INFO  Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf//field.v5r0.c2.down.cdf
+MagneticFieldGridReader INFO  Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf//field.v5r0.c3.down.cdf
+MagneticFieldGridReader INFO  Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf//field.v5r0.c4.down.cdf
+MagneticFieldSvc                       INFO Map scaled by factor 1 with polarity internally used: -1 signed relative current: -1
+HLTControlFlowMgr                      INFO Start initialization
+HLTControlFlowMgr                      INFO Will not use an EventSelector.
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000005_1.digi'
+TClass::Init                        WARNING no dictionary for class SmartRef<LHCb::HepMCEvent> is available
+DeFTDetector                           INFO Current FT geometry version =   64
+Hlt2DebugTracking_CaloTrackBased...    INFO getting parametrization histograms from paramfile://data/CaloPID/eshower_trackbased_parametrization.root
+Hlt2DebugTracking_CaloChargedPID...    INFO getting DLL histograms from paramfile://data/CaloPID/DLLs_parametrization_histograms_042025.root
+Hlt2DebugTracking_CaloChargedBre...    INFO brem reco method: 'Mixed'; using max match chi2 (decision to add brem) at 12; switch to track-based above 1; using all clusters for energy
+Hlt2DebugTracking_CaloChargedBre...    INFO getting DLL histograms from paramfile://data/CaloPID/DLLs_parametrization_histograms_042025.root
+ToolSvc.RichPartProp                   INFO Particle types considered = [electron, muon, pion, kaon, proton, deuteron, below_threshold]
+Hlt2DebugTracking_ChargedProtoPa...    INFO Using retuned RICH el and mu DLL values in combined DLLs
+Hlt2DebugTracking_CaloTrackBased...    INFO getting parametrization histograms from paramfile://data/CaloPID/eshower_trackbased_parametrization.root
+Hlt2DebugTracking_CaloChargedPID...    INFO getting DLL histograms from paramfile://data/CaloPID/DLLs_parametrization_histograms_042025.root
+Hlt2DebugTracking_CaloChargedBre...    INFO brem reco method: 'Mixed'; using max match chi2 (decision to add brem) at 12; switch to track-based above 1; using all clusters for energy
+Hlt2DebugTracking_CaloChargedBre...    INFO getting DLL histograms from paramfile://data/CaloPID/DLLs_parametrization_histograms_042025.root
+Hlt2DebugTracking_ChargedProtoPa...    INFO Using retuned RICH el and mu DLL values in combined DLLs
+Hlt2DebugTracking_CaloChargedBre...    INFO brem reco method: 'Mixed'; using max match chi2 (decision to add brem) at 12; switch to track-based above 1; using all clusters for energy
+Hlt2DebugTracking_CaloChargedBre...    INFO getting DLL histograms from paramfile://data/CaloPID/DLLs_parametrization_histograms_042025.root
+Hlt2DebugTracking_ChargedProtoPa...    INFO Using retuned RICH el and mu DLL values in combined DLLs
+HLTControlFlowMgr                      INFO Concurrency level information:
+HLTControlFlowMgr                      INFO  o Number of events slots: 1
+HLTControlFlowMgr                      INFO  o TBB thread pool size:  'ThreadPoolSize':-1
+HLTControlFlowMgr                      INFO ---> End of Initialization. This took 47941 ms
+ApplicationMgr                         INFO Application Manager Initialized successfully
+HltANNSvc                           WARNING key 0x84a718f6 has an explicitly configured overrule -- using that...
+ApplicationMgr                         INFO Application Manager Started successfully
+HLTControlFlowMgr                      INFO Will measure time between events 5000 and 45000 (stop might be some events later)
+HLTControlFlowMgr                      INFO Starting loop on events
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000005_1.digi
+FTRawBankDecoder                       INFO Conditions DB is compatible with FT bank version 7 and 8.
+Hlt2DebugTracking_CaloFutureClus...    INFO  	 ==  Parameters for covariance estimation ==
+Hlt2DebugTracking_CaloFutureClus...    INFO Stochastic 	 : [0.21, 0.14, 0.14] Sqrt(GeV)
+Hlt2DebugTracking_CaloFutureClus...    INFO GainError 	 : [0.045, 0.025, 0.025] 
+Hlt2DebugTracking_CaloFutureClus...    INFO IncoherentNoise 	 : [2.2, 2.2, 2.2] ADC
+Hlt2DebugTracking_CaloFutureClus...    INFO CoherentNoise 	 : [1.3, 1.3, 1.3] ADC
+Hlt2DebugTracking_CaloFutureClus...    INFO ConstantE 	 : [0, 0, 0] MeV
+Hlt2DebugTracking_CaloFutureClus...    INFO ConstantX 	 : [9, 2, 0.5] mm
+Hlt2DebugTracking_CaloFutureClus...    INFO ConstantY 	 : [9, 2, 0.5] mm
+Hlt2DebugTracking_CaloFutureClus...    INFO  Energy   mask :  (from DB) 
+Hlt2DebugTracking_CaloFutureClus...    INFO  Position mask :  (from DB) 
+Hlt2DebugTracking_CaloFutureMerg...    INFO  Energy   mask :  (from DB) 
+Hlt2DebugTracking_CaloFutureMerg...    INFO  Position mask :  (from DB) 
+Hlt2DebugTracking_CaloFutureMerg...    INFO  	 ==  Parameters for covariance estimation ==
+Hlt2DebugTracking_CaloFutureMerg...    INFO Stochastic 	 : [0.21, 0.14, 0.14] Sqrt(GeV)
+Hlt2DebugTracking_CaloFutureMerg...    INFO GainError 	 : [0.045, 0.025, 0.025] 
+Hlt2DebugTracking_CaloFutureMerg...    INFO IncoherentNoise 	 : [2.2, 2.2, 2.2] ADC
+Hlt2DebugTracking_CaloFutureMerg...    INFO CoherentNoise 	 : [1.3, 1.3, 1.3] ADC
+Hlt2DebugTracking_CaloFutureMerg...    INFO ConstantE 	 : [0, 0, 0] MeV
+Hlt2DebugTracking_CaloFutureMerg...    INFO ConstantX 	 : [9, 2, 0.5] mm
+Hlt2DebugTracking_CaloFutureMerg...    INFO ConstantY 	 : [9, 2, 0.5] mm
+FutureEcalZSup                        ERROR Suppressing message: 'No bank found'
+FutureHcalZSup                        ERROR Suppressing message: 'No bank found'
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+HltANNSvc                           WARNING key 0x0889dbb8 has an explicitly configured overrule -- using that...
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING The relations table is empty
+CaloClusterMCTruth_b1e9f302         WARNING Suppressing message: 'The relations table is empty'
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000008_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000005_1.digi [3E50553A-3921-11EF-A770-A4BF010FF5C4]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000008_1.digi
+HLTControlFlowMgr                      INFO Timing started at: 18:46:13
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000013_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000008_1.digi [13DEFAD6-3921-11EF-B92C-3CECEF5D3140]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000013_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000018_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000013_1.digi [B87CF752-391F-11EF-820B-3CECEF9516A6]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000018_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000022_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000018_1.digi [B3401894-3917-11EF-98AC-0040A683DF85]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000022_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000023_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000022_1.digi [FE0A42EA-3918-11EF-8DC8-0040A683E5ED]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000023_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000030_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000023_1.digi [5AFB3416-3921-11EF-9E8D-7CC2559E863E]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000030_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000037_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000030_1.digi [6D18F0DC-391E-11EF-95D6-3CECEF0DDF42]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000037_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000045_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000037_1.digi [931390A0-3921-11EF-9530-A4BF0112D1E4]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000045_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000050_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000045_1.digi [41DF072A-391F-11EF-A541-3CECEF5D2E3A]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000050_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000054_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000050_1.digi [488C31EA-3921-11EF-9B6D-A4BF01606ACF]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000054_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000058_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000054_1.digi [178469DC-3921-11EF-9225-A4BF0160DB23]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000058_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000065_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000058_1.digi [A9872B68-3920-11EF-8C70-3CECEF5D314E]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000065_1.digi
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000066_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000065_1.digi [6A3A318A-3920-11EF-96D7-AC1F6BBC5F62]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000066_1.digi
+HLTControlFlowMgr                      INFO Timing stopped at: 21:08:08
+RootIOAlg                              INFO DATAFILE='root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000069_1.digi'
+IODataManager                          INFO Disconnect from dataset root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000066_1.digi [B623E37E-3921-11EF-8FD7-3CECEF5D2ED2]
+RootIOAlg                           SUCCESS Reading Event record 1 within root://eoslhcb.cern.ch//eos/lhcb/grid/prod/lhcb/MC/2024/DIGI/00230966/0000/00230966_00000069_1.digi
+HLTControlFlowMgr                      INFO ---> Loop over 50000 Events Finished -  WSS 17277.6, timed 40000 Events: 8515372 ms, Evts/s = 4.69739
+CaloClusterMCTruth_b1e9f302            INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#CC2MC links"                                  |     49170 |          0 |     0.0000 |
+ | "The relations table is empty"                  |     49170 |
+CaloFutureDigit2MCLinks2Table_b7...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#CD2MC links"                                  |     49170 |          0 |     0.0000 |
+ | "Empty Relation table"                          |     49170 |
+CaloFutureHypoMCTruth_9bf451df         INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links"                                        |     49170 |          0 |     0.0000 |
+CaloFutureHypoMCTruth_ead6188f         INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links"                                        |     49170 |          0 |     0.0000 |
+ChargedProtoParticleAssociator_b...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Efficiency"                                    |   2417875 |    2149918 |( 88.91767 +- 0.02018797)% |
+ | "MC particles per ProtoParticle"                |   2149918 |    2516423 |     1.1705 |
+CopySignalMCParticles_daf3c6a8         INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"copy signal"                                   | 208108097 |          0 |( 0.000000 +- 0.000000)% |
+ |*"input container present"                       |     49170 |      49170 |( 100.0000 +- 0.000000)% |
+Copy_MC_For__Event_Relations_Cha...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# of cloned entries"                           |     98340 |    2516423 |     25.589 |     34.305 |      0.0000 |      251.00 |
+ |*"Input container absent"                        |     98340 |          0 |( 0.000000 +- 0.000000)% |
+Copy_MC_For__Event_Relations_Cha...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"MCParticles cloned"                            |   7929339 |    7929339 |( 100.0000 +- 0.000000)% |
+ |*"MCVertices cloned"                             |   4839647 |    3271581 |( 67.59958 +- 0.02127358)% |
+FutureEcalZSup                         INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "No bank found"                                 |     49170 |
+FutureHcalZSup                         INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "No bank found"                                 |     49170 |
+HLT2DecReportsMonitor                  INFO Booked 4 Histogram(s) : 1D=2 2D=0 3D=0 1DProf=2 2DProf=0 3DProf=0
+HLT2DecReportsMonitor                  INFO 1D histograms in directory "HLT2DecReportsMonitor" : 2
+ | ID                                                                               | Title                                                                            |      #     |     Mean   |    RMS     |  Skewness  |  Kurtosis  |
+ | pass_count                                                                       | "Number of positive decisions"                                                   |       5042 |        0.5 | 0.0000     |          0 |          0 |
+ | pass_count_ul                                                                    | "Number of positive decisions"                                                   |       5042 |          0 | 0.0000     |          0 |          0 |
+HLT2DecReportsMonitor                  INFO 1D profile histograms in directory "HLT2DecReportsMonitor" : 2
+ | ID                                                                               | Title                                                                            |      #     |     Mean   |    RMS     |  Skewness  |  Kurtosis  |
+ | pass_frac                                                                        | "Accept fraction per decision"                                                   |       5042 |        0.5 | 0.0000     |          0 |          0 |
+ | pass_frac_ul                                                                     | "Accept fraction per decision"                                                   |       5042 |          0 | 0.0000     |          0 |          0 |
+HLT2PostscaleDecReportsMonitor         INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"#accept"                                       |      5042 |          0 |( 0.000000 +- 0.000000)% |
+HLT2PrescaleDecReportsMonitor          INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"#accept"                                       |     50000 |       5042 |( 10.08400 +- 0.1346635)% |
+HLTControlFlowMgr                      INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Processed events"                              |     50000 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "#tracks in acceptance"                         |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |    2417875 |     49.174 |     33.297 |      0.0000 |      448.00 |
+ | "#tracks in acceptance"                         |     49170 |    1775542 |     36.110 |     24.877 |      0.0000 |      332.00 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "#tracks in acceptance"                         |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "#tracks in acceptance"                         |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |    2417875 |     49.174 |     33.297 |      0.0000 |      448.00 |
+ | "#tracks in acceptance"                         |     49170 |    2016443 |     41.010 |     27.801 |      0.0000 |      396.00 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |    1308151 |     26.605 |     18.906 |      0.0000 |      955.00 |
+ | "#tracks in acceptance"                         |     49170 |    1047239 |     21.298 |     15.531 |      0.0000 |      814.00 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "#tracks in acceptance"                         |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloAcceptance...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#total tracks"                                 |     49170 |    2417875 |     49.174 |     33.297 |      0.0000 |      448.00 |
+ | "#tracks in acceptance"                         |     49170 |    1891772 |     38.474 |     26.028 |      0.0000 |      372.00 |
+Hlt2DebugTracking_CaloFutureMerg...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "clusters => mergedPi0s"                        |     49170 |          0 |     0.0000 |
+ | "clusters => splitClusters"                     |     49170 |          0 |     0.0000 |
+Hlt2DebugTracking_CaloSelectiveB...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "energy (track based)"                          |   1775542 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloSelectiveE...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links in table"                               |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloSelectiveE...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links in table"                               |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloSelectiveT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links in table"                               |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloSelectiveT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links in table"                               |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloSelectiveT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#links in table"                               |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloTrackBased...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "average DLL"                                   |   2016443 |  -376294.2 |   -0.18661 |    0.20235 |     -12.104 |  -0.0099593 |
+ | "average E/p"                                   |   2016443 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CaloTrackToHca...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "energy (calo) associated to track"             |   1891772 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_ChargedProtoPa...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "CreatedProtos"                                 |   2417875 |
+Hlt2DebugTracking_ClassifyPhoton...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "electronHypos"                                 |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "photonHypos"                                   |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_CloneKillerFor...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "nTracksInput"                                  |     49170 |    2552310 |     51.908 |
+ | "nTracksSelected"                               |     49170 |     991208 |     20.159 |
+Hlt2DebugTracking_DownstreamTrac...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# loaded from PYTHON"                          |        14 |
+Hlt2DebugTracking_GraphClustering      INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# clusters"                                    |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_LHCb__Converte...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Events without Tracks"                   |       400 |          0 |     0.0000 |
+ | "Nb of Produced Tracks"                         |     48770 |    1308151 |     26.823 |
+Hlt2DebugTracking_LHCb__Converte...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Events without Tracks"                   |       188 |          0 |     0.0000 |
+ | "Nb of Produced Tracks"                         |     48982 |    2417875 |     49.363 |
+Hlt2DebugTracking_LHCb__Converte...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Events without Tracks"                   |     49170 |          0 |     0.0000 |
+Hlt2DebugTracking_LHCb__Converte...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Events without Tracks"                   |     49170 |          0 |     0.0000 |
+Hlt2DebugTracking_MuonIDHlt2AlgLong    INFO Number of counters : 7
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "BgLL"                                          |    157189 |    -134931 |   -0.85840 |     1.1989 |     -10.085 |      0.0000 |
+ | "MuLL"                                          |    157189 |   -1269032 |    -8.0733 |     3.6465 |     -11.513 |  -0.0014323 |
+ | "muonMVAStat"                                   |    157189 |  -52562.74 |   -0.33439 |     1.0691 |     -4.5592 |      5.2221 |
+ |*"nInAcceptance"                                 |   2417875 |    1907420 |( 78.88828 +- 0.02624528)% |
+ |*"nIsMuon"                                       |   2417875 |     157189 |( 6.501122 +- 0.01585552)% |
+ |*"nIsMuonTight"                                  |   2417875 |      85029 |( 3.516683 +- 0.01184611)% |
+ |*"nMomentumCut"                                  |   2417875 |    2049982 |( 84.78445 +- 0.02309857)% |
+Hlt2DebugTracking_MuonPIDV2ToMuo...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of input v2 MuonPIDs"                       |     49170 |    2417875 |     49.174 |
+Hlt2DebugTracking_NeutralProtoPAlg     INFO Number of counters : 4
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Neutral Protos"                                |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "Neutral Protos from MergedPi0s"                |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "Neutral Protos from Photons"                   |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "Neutral Protos from SplitPhotons"              |     49170 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+Hlt2DebugTracking_PrCloneKillerSeed    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "nTracksInput"                                  |     49170 |    2993009 |     60.871 |
+ | "nTracksSelected"                               |     49170 |    1308151 |     26.605 |
+Hlt2DebugTracking_PrForwardTrack...    INFO Number of counters : 11
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Accepted input tracks"                         |     49099 |    5343007 |     108.82 |
+ | "Created long tracks"                           |     49099 |    2552310 |     51.983 |
+ | "Empty input tracks"                            |        71 |
+ | "Input tracks"                                  |     49099 |    5603636 |     114.13 |
+ | "Number of candidate bins per track"            |   5343007 |3.661136e+07 |     6.8522 |     12.604 |      0.0000 |      274.00 |
+ | "Number of complete candidates/track 1st Loop"  |   4336232 |    2722735 |    0.62790 |    0.64466 |      0.0000 |      12.000 |
+ | "Number of complete candidates/track 2nd Loop"  |   2150977 |     196870 |   0.091526 |    0.30181 |      0.0000 |      10.000 |
+ | "Number of x candidates per track 1st Loop"     |   4336232 |    7079851 |     1.6327 |     2.1549 |
+ | "Number of x candidates per track 2nd Loop"     |   2150977 |    7947530 |     3.6948 |     7.0024 |
+ | "Percentage second loop execution"              |   4336232 |    2150977 |    0.49605 |
+ | "Removed duplicates"                            |     49099 |     129073 |     2.6288 |
+Hlt2DebugTracking_PrHybridSeeding      INFO Number of counters : 21
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Created T2x1 three-hit combinations in case 0" |  68175234 |4.186926e+07 |    0.61414 |    0.62411 |      0.0000 |      7.0000 |
+ | "Created T2x1 three-hit combinations in case 1" |  97974542 |6.473444e+07 |    0.66073 |    0.74050 |      0.0000 |      12.000 |
+ | "Created T2x1 three-hit combinations in case 2" | 170347259 |1.387432e+08 |    0.81447 |    0.99650 |      0.0000 |      25.000 |
+ | "Created XZ tracks (part 0)"                    |    147510 |    6893712 |     46.734 |     106.18 |      0.0000 |      7694.0 |
+ | "Created XZ tracks (part 1)"                    |    147510 |    6610534 |     44.814 |     96.742 |      0.0000 |      5341.0 |
+ | "Created XZ tracks in case 0"                   |     98340 |    4297270 |     43.698 |     67.172 |      0.0000 |      4519.0 |
+ | "Created XZ tracks in case 1"                   |     98340 |    4914361 |     49.973 |     100.68 |      0.0000 |      7694.0 |
+ | "Created XZ tracks in case 2"                   |     98340 |    4292615 |     43.651 |     127.58 |      0.0000 |      6392.0 |
+ | "Created full hit combinations in case 0"       |   6938877 |    6938877 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "Created full hit combinations in case 1"       |   5872610 |    5872610 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "Created full hit combinations in case 2"       |   6776479 |    6776479 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "Created seed tracks"                           |     98340 |    2993009 |     30.435 |     22.439 |      0.0000 |      752.00 |
+ | "Created seed tracks (part 0)"                  |     49170 |    2381587 |     48.436 |     36.822 |      0.0000 |      1894.0 |
+ | "Created seed tracks (part 1)"                  |     49170 |    2336677 |     47.522 |     34.795 |      0.0000 |      1026.0 |
+ | "Created seed tracks in case 0"                 |     98340 |    2175665 |     22.124 |     16.600 |      0.0000 |      930.00 |
+ | "Created seed tracks in case 1"                 |     98340 |    3991715 |     40.591 |     29.125 |      0.0000 |      1580.0 |
+ | "Created seed tracks in case 2"                 |     98340 |    4476534 |     45.521 |     34.119 |      0.0000 |      1884.0 |
+ | "Created seed tracks in recovery step"          |     49170 |     241730 |     4.9162 |     4.5083 |      0.0000 |      42.000 |
+ | "Created two-hit combinations in case 0"        |  13260775 |2.742376e+08 |     20.680 |     16.062 |      0.0000 |      247.00 |
+ | "Created two-hit combinations in case 1"        |  11986537 |3.492418e+08 |     29.136 |     19.439 |      0.0000 |      235.00 |
+ | "Created two-hit combinations in case 2"        |  10095842 |4.552311e+08 |     45.091 |     29.878 |      0.0000 |      287.00 |
+Hlt2DebugTracking_PrKalmanFilter...    INFO Number of counters : 6
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Pre outlier chi2 cut"                          |     42284 |
+ | "chi2 cut"                                      |    124523 |
+ | "nIterations"                                   |    991208 |    2359582 |     2.3805 |
+ | "nOutlierIterations"                            |    948924 |     731604 |    0.77098 |
+ | "nTracksInput"                                  |     49170 |     991208 |     20.159 |
+ | "nTracksOutput"                                 |     49170 |     824401 |     16.766 |
+Hlt2DebugTracking_PrKalmanFilter...    INFO Number of counters : 7
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Pre outlier chi2 cut"                          |     26657 |
+ | "Transport failed"                              |         2 |          0 |     0.0000 |
+ | "chi2 cut"                                      |    134480 |
+ | "nIterations"                                   |   1927435 |    4161085 |     2.1589 |
+ | "nOutlierIterations"                            |   1900776 |    1150607 |    0.60534 |
+ | "nTracksInput"                                  |     49170 |    1927435 |     39.199 |
+ | "nTracksOutput"                                 |     49170 |    1766296 |     35.922 |
+Hlt2DebugTracking_PrKalmanFilter...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "RungeKuttaExtrapolator failed with code: RK: Curling"|         2 |
+Hlt2DebugTracking_PrLHCbID2MCPar...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#removed null MCParticles"                     | 275914987 |          0 |     0.0000 |
+Hlt2DebugTracking_PrLongLivedTra...    INFO Number of counters : 8
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#Downstream tracks made"                       |     49170 |    1840591 |     37.433 |
+ | "#Good XUVcand"                                 |   2736316 |1.469972e+07 |     5.3721 |
+ | "#Good Xcand"                                   |   2736316 |4.988267e+07 |     18.230 |
+ | "#Presel hits0"                                 |   2736316 |3.17401e+07 |     11.600 |
+ | "#Presel hits1"                                 |   2736316 |3.169415e+07 |     11.583 |
+ | "#Presel hits2"                                 |   2736316 |3.041376e+07 |     11.115 |
+ | "#Presel hits3"                                 |   2736316 |3.102636e+07 |     11.339 |
+ | "#Seeds"                                        |     49170 |    2993009 |     60.871 |
+Hlt2DebugTracking_PrMatchNN            INFO Number of counters : 3
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#MatchingChi2"                                 |     49024 |2.635068e+07 |     537.51 |
+ | "#MatchingMLP"                                  |   1927435 |    1607577 |    0.83405 |
+ | "#MatchingTracks"                               |     49024 |    1927435 |     39.316 |
+Hlt2DebugTracking_PrStoreSciFiHits     INFO Number of counters : 25
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Average X in T1U"                              |  13448834 |-3.800787e+08 |    -28.261 |     1232.2 |     -2656.3 |      2656.4 |
+ | "Average X in T1V"                              |  13593965 |-2.609679e+08 |    -19.197 |     1221.4 |     -2656.3 |      2656.4 |
+ | "Average X in T1X1"                             |  13260775 |-5.192529e+08 |    -39.157 |     1246.9 |     -2646.2 |      2646.2 |
+ | "Average X in T1X2"                             |  13751625 |-1.368014e+08 |    -9.9480 |     1212.5 |     -2646.2 |      2646.2 |
+ | "Average X in T2U"                              |  13131838 |-2.148269e+08 |    -16.359 |     1232.1 |     -2656.3 |      2656.4 |
+ | "Average X in T2V"                              |  13464234 |-1.612735e+08 |    -11.978 |     1225.2 |     -2656.3 |      2656.4 |
+ | "Average X in T2X1"                             |  12661892 |-2.115625e+08 |    -16.709 |     1237.0 |     -2646.2 |      2646.2 |
+ | "Average X in T2X2"                             |  13824117 |-1.260378e+08 |    -9.1172 |     1217.4 |     -2646.2 |      2646.2 |
+ | "Average X in T3U"                              |  14546425 |-7.41565e+07 |    -5.0979 |     1467.2 |     -3188.4 |      3188.4 |
+ | "Average X in T3V"                              |  14919516 |-1.14519e+08 |    -7.6758 |     1459.6 |     -3188.4 |      3188.4 |
+ | "Average X in T3X1"                             |  14087679 |-5.153417e+07 |    -3.6581 |     1469.1 |     -3176.2 |      3176.2 |
+ | "Average X in T3X2"                             |  15381994 |-1.555742e+08 |    -10.114 |     1448.1 |     -3176.2 |      3176.2 |
+ | "Hits in T1U"                                   |    196680 |1.344883e+07 |     68.379 |     32.367 |      6.0000 |      346.00 |
+ | "Hits in T1V"                                   |    196680 |1.359396e+07 |     69.117 |     32.813 |      4.0000 |      347.00 |
+ | "Hits in T1X1"                                  |    196680 |1.326078e+07 |     67.423 |     31.583 |      6.0000 |      415.00 |
+ | "Hits in T1X2"                                  |    196680 |1.375162e+07 |     69.919 |     33.135 |      4.0000 |      338.00 |
+ | "Hits in T2U"                                   |    196680 |1.313184e+07 |     66.768 |     31.722 |      6.0000 |      381.00 |
+ | "Hits in T2V"                                   |    196680 |1.346423e+07 |     68.458 |     32.645 |      5.0000 |      616.00 |
+ | "Hits in T2X1"                                  |    196680 |1.266189e+07 |     64.378 |     30.359 |      6.0000 |      333.00 |
+ | "Hits in T2X2"                                  |    196680 |1.382412e+07 |     70.287 |     33.404 |      5.0000 |      381.00 |
+ | "Hits in T3U"                                   |    196680 |1.454642e+07 |     73.960 |     33.741 |      7.0000 |      370.00 |
+ | "Hits in T3V"                                   |    196680 |1.491952e+07 |     75.857 |     34.750 |      8.0000 |      355.00 |
+ | "Hits in T3X1"                                  |    196680 |1.408768e+07 |     71.627 |     32.461 |      8.0000 |      307.00 |
+ | "Hits in T3X2"                                  |    196680 |1.538199e+07 |     78.208 |     35.953 |      7.0000 |      360.00 |
+ | "Total number of hits"                          |     49170 |1.660729e+08 |     3377.5 |     1450.8 |      716.00 |      13581. |
+Hlt2DebugTracking_PrStoreUTHitCl...    INFO Number of counters : 3
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# RawBank::UT banks"                           |     49170 |1.062072e+07 |     216.00 |
+ | "# RawBank::UTError banks"                      |     49170 |          0 |     0.0000 |
+ |*"Non-unique UT clusters in event"               |     49170 |          0 |( 0.000000 +- 0.000000)% |
+Hlt2DebugTracking_PrTrackAssocia...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Efficiency"                                    |   1840591 |    1712895 |( 93.06223 +- 0.01872915)% |
+ | "MC particles per track"                        |   1712895 |    1712895 |     1.0000 |
+Hlt2DebugTracking_PrTrackAssocia...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Efficiency"                                    |   2993009 |    2937789 |( 98.15503 +- 0.007778511)% |
+ | "MC particles per track"                        |   2937789 |    2937842 |     1.0000 |
+Hlt2DebugTracking_PrVPHitsToVPLi...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Produced Clusters"                       |     50000 |6.707747e+07 |     1341.5 |
+Hlt2DebugTracking_Prescaler            INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"#accept"                                       |     50000 |      50000 |( 100.0000 +- 0.000000)% |
+Hlt2DebugTracking_SeedTrackCheck...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# loaded from PYTHON"                          |        17 |
+Hlt2DebugTracking_TBTCForward          INFO Number of counters : 3
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"BadInput"                                      |    782986 |          0 |( 0.000000 +- 0.000000)% |
+ |*"FitFailed"                                     |    782986 |          0 |( 0.000000 +- 0.000000)% |
+ | "FittedBefore"                                  |    782986 |
+Hlt2DebugTracking_TBTC_Match           INFO Number of counters : 3
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"BadInput"                                      |   1634889 |          0 |( 0.000000 +- 0.000000)% |
+ |*"FitFailed"                                     |   1634889 |          0 |( 0.000000 +- 0.000000)% |
+ | "FittedBefore"                                  |   1634889 |
+Hlt2DebugTracking_TrackBeamLineV...    INFO Number of counters : 3
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Fraction of failed PV fits"                    |    189718 |         74 |(0.03900526 +- 0.004533385)% |
+ |*"Fraction of unconverged PV fits"               |    189718 |      17006 |( 8.963831 +- 0.06558425)% |
+ | "Nb PVs"                                        |     50000 |     188177 |     3.7635 |
+Hlt2DebugTracking_UTHitClustersT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# Converted Clusters"                          |     49170 |4.27722e+07 |     869.88 |
+Hlt2DebugTracking_UTHitClustersT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# Converted Clusters"                          |     49170 |4.27722e+07 |     869.88 |
+Hlt2DebugTracking_VPLightCluster...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# Converted Clusters"                          |     50000 |6.707747e+07 |     1341.5 |
+Hlt2DebugTracking_VeloClusterTra...    INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Produced Clusters"                       |     50000 |6.707747e+07 |     1341.5 |
+ | "Nb of Produced Tracks"                         |     50000 |    8739720 |     174.79 |
+Hlt2DebugTracking_fromPrDownstre...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of converted Tracks"                        |     49170 |    1840591 |     37.433 |
+Hlt2DebugTracking_fromPrSeedingT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of converted Tracks"                        |     49170 |    1308151 |     26.605 |
+Hlt2DebugTracking_fromPrSeedingT...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of converted Tracks"                        |     49170 |    2993009 |     60.871 |
+Hlt2DebugTracking_fromPrVeloTrac...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of converted Tracks"                        |     50000 |    8739720 |     174.79 |
+Hlt2DebugTracking_fromV2MuonPIDV...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of Produced MuonPIDs"                       |     49170 |    2417875 |     49.174 |
+HltDecReportsFilter_4ab39fa2           INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Cut selection efficiency"                      |     49170 |      49170 |( 100.0000 +- 0.000000)% |
+HltPackedBufferWriter_2c57eb74         INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Size of compressed data"                       |     49170 |3.898181e+09 |     79280. |     49625. |      1558.0 |  7.5179e+05 |
+ | "Size of serialized data"                       |     49170 |3.897788e+09 |     79272. |     49625. |      1550.0 |  7.5178e+05 |
+LHCb__SelectivePacker_1542a0b4         INFO Number of counters : 66
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "BremInfos # containers packed"                 |     49170 |      48885 |    0.99420 |
+ | "BremInfos # of packed entries"                 |     48885 |    1775542 |     36.321 |
+ | "BremInfos buffer size"                         |     48885 |7.564823e+07 |     1547.5 |
+ | "BremInfosSelection # containers packed"        |     49170 |          0 |     0.0000 |
+ | "CaloAdcs # containers packed"                  |     49170 |          0 |     0.0000 |
+ | "CaloChargedPIDs # containers packed"           |     49170 |      48952 |    0.99557 |
+ | "CaloChargedPIDs # of packed entries"           |     48952 |    2036201 |     41.596 |
+ | "CaloChargedPIDs buffer size"                   |     48952 |1.23249e+08 |     2517.8 |
+ | "CaloChargedPIDsSelection # containers packed"  |     49170 |          0 |     0.0000 |
+ | "CaloClusters # containers packed"              |     49170 |          0 |     0.0000 |
+ | "CaloClustersSelection # containers packed"     |     49170 |          0 |     0.0000 |
+ | "CaloDigits # containers packed"                |     49170 |          0 |     0.0000 |
+ | "CaloHypos # containers packed"                 |     49170 |     196680 |     4.0000 |
+ | "CaloHypos # of packed entries"                 |    196680 |          0 |     0.0000 |
+ | "CaloHypos buffer size"                         |    196680 |    5113680 |     26.000 |
+ | "CaloHyposSelection # containers packed"        |     49170 |          0 |     0.0000 |
+ | "ExtendedPVs # containers packed"               |     49170 |          0 |     0.0000 |
+ | "FlavourTags # containers packed"               |     49170 |          0 |     0.0000 |
+ | "FlavourTagsSelection # containers packed"      |     49170 |          0 |     0.0000 |
+ | "GlobalChargedPIDs # containers packed"         |     49170 |      48982 |    0.99618 |
+ | "GlobalChargedPIDs # of packed entries"         |     48982 |    2417875 |     49.363 |
+ | "GlobalChargedPIDs buffer size"                 |     48982 |1.364786e+08 |     2786.3 |
+ | "GlobalChargedPIDsSelection # containers packed"|     49170 |          0 |     0.0000 |
+ | "LightPVs # containers packed"                  |     49170 |          0 |     0.0000 |
+ | "LightPVsSelection # containers packed"         |     49170 |          0 |     0.0000 |
+ | "MuonPIDs # containers packed"                  |     49170 |      48982 |    0.99618 |
+ | "MuonPIDs # of packed entries"                  |     48982 |    2417875 |     49.363 |
+ | "MuonPIDs buffer size"                          |     48982 |1.464923e+08 |     2990.7 |
+ | "MuonPIDsSelection # containers packed"         |     49170 |          0 |     0.0000 |
+ | "NeutralPIDs # containers packed"               |     49170 |          0 |     0.0000 |
+ | "NeutralPIDsSelection # containers packed"      |     49170 |          0 |     0.0000 |
+ | "P2InfoRelations # containers packed"           |     49170 |          0 |     0.0000 |
+ | "P2IntRelations # containers packed"            |     49170 |          0 |     0.0000 |
+ | "P2MCPRelations # containers packed"            |     49170 |          0 |     0.0000 |
+ | "P2PRelations # containers packed"              |     49170 |          0 |     0.0000 |
+ | "P2PVRelations # containers packed"             |     49170 |          0 |     0.0000 |
+ | "P2VRelations # containers packed"              |     49170 |          0 |     0.0000 |
+ | "PP2MCPRelations # containers packed"           |     49170 |      98340 |     2.0000 |
+ | "PP2MCPRelations # of packed entries"           |     98340 |    2516423 |     25.589 |
+ | "PP2MCPRelations buffer size"                   |     98340 |5.603068e+07 |     569.76 |
+ | "PVs # containers packed"                       |     49170 |      49170 |     1.0000 |
+ | "PVs # of packed entries"                       |     49170 |     188177 |     3.8271 |
+ | "PVs buffer size"                               |     49170 |7.429653e+07 |     1511.0 |
+ | "PVsSelection # containers packed"              |     49170 |          0 |     0.0000 |
+ | "Particles # containers packed"                 |     49170 |          0 |     0.0000 |
+ | "ParticlesSelection # containers packed"        |     49170 |          0 |     0.0000 |
+ | "ProtoParticles # containers packed"            |     49170 |     196680 |     4.0000 |
+ | "ProtoParticles # of packed entries"            |    196680 |    2417875 |     12.293 |
+ | "ProtoParticles buffer size"                    |    196680 |1.811624e+08 |     921.10 |
+ | "ProtoParticlesSelection # containers packed"   |     49170 |          0 |     0.0000 |
+ | "RecSummary # containers packed"                |     49170 |      49170 |     1.0000 |
+ | "RecSummary # of packed entries"                |     49170 |    1868460 |     38.000 |
+ | "RecSummary buffer size"                        |     49170 |    8555580 |     174.00 |
+ | "RichPIDs # containers packed"                  |     49170 |      48978 |    0.99610 |
+ | "RichPIDs # of packed entries"                  |     48978 |    2292714 |     46.811 |
+ | "RichPIDs buffer size"                          |     48978 |1.113237e+08 |     2272.9 |
+ | "RichPIDsSelection # containers packed"         |     49170 |          0 |     0.0000 |
+ | "Tracks # containers packed"                    |     49170 |     282421 |     5.7438 |
+ | "Tracks # of packed entries"                    |    282421 |1.26219e+07 |     44.692 |
+ | "Tracks buffer size"                            |    282421 |2.979437e+09 |     10550. |
+ | "TracksSelection # containers packed"           |     49170 |          0 |     0.0000 |
+ | "TwoProngVertices # containers packed"          |     49170 |          0 |     0.0000 |
+ | "TwoProngVerticesSelection # containers packed" |     49170 |          0 |     0.0000 |
+ | "Vertices # containers packed"                  |     49170 |          0 |     0.0000 |
+ | "VerticesSelection # containers packed"         |     49170 |          0 |     0.0000 |
+ | "WeightsVectors # containers packed"            |     49170 |          0 |     0.0000 |
+Pack__Event_HLT2_MC_Particles          INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#MCParticles"                                  |     48982 |    7929339 |     161.88 |     101.64 |      1.0000 |      790.00 |
+Pack__Event_HLT2_MC_Vertices           INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#MCVertices"                                   |     48982 |    3271581 |     66.791 |     41.245 |      1.0000 |      314.00 |
+PrLHCbID2MCParticleVPUTFTMU_28d1...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#removed null MCParticles"                     | 285047073 |     354446 |  0.0012435 |
+PrTrackAssociator_c955b3bf             INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Efficiency"                                    |   2417875 |    2149918 |( 88.91767 +- 0.02018797)% |
+ | "MC particles per track"                        |   2149918 |    2516423 |     1.1705 |
+require_pvs                            INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Cut selection efficiency"                      |     50000 |      49170 |( 98.34000 +- 0.05713920)% |
+ApplicationMgr                         INFO Application Manager Stopped successfully
+Hlt2DebugTracking_DownstreamTrac...    INFO Results
+Hlt2DebugTracking_DownstreamTrac...    INFO **** Downstream                   1840591 tracks including         127696 ghosts [ 6.94 %], Event average  5.11 % ****
+Hlt2DebugTracking_DownstreamTrac...    INFO   01_UT+T                       : 1480487 from  2488597 [ 59.49 %]      7 clones [ 0.00 %], purity: 99.58 %, hitEff: 99.53 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   02_UT+T_P>5GeV                :  971269 from  1514157 [ 64.15 %]      3 clones [ 0.00 %], purity: 99.55 %, hitEff: 99.52 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   03_UT+T_strange               :  128675 from   257486 [ 49.97 %]      1 clones [ 0.00 %], purity: 99.61 %, hitEff: 99.52 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   04_UT+T_strange_P>5GeV        :   72076 from   128200 [ 56.22 %]      0 clones [ 0.00 %], purity: 99.57 %, hitEff: 99.50 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   05_noVelo+UT+T_strange        :   56687 from   136694 [ 41.47 %]      1 clones [ 0.00 %], purity: 99.61 %, hitEff: 99.45 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   06_noVelo+UT+T_strange_P>5GeV :   35307 from    71293 [ 49.52 %]      0 clones [ 0.00 %], purity: 99.58 %, hitEff: 99.45 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   07_UT+T_fromDB                :   18341 from    30430 [ 60.27 %]      0 clones [ 0.00 %], purity: 99.56 %, hitEff: 99.52 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   08_UT+T_fromBD_P>5GeV         :   12765 from    19706 [ 64.78 %]      0 clones [ 0.00 %], purity: 99.54 %, hitEff: 99.50 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   09_noVelo+UT+T_fromBD         :    1551 from     4548 [ 34.10 %]      0 clones [ 0.00 %], purity: 99.52 %, hitEff: 99.27 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   10_noVelo+UT+T_fromBD_P>5GeV  :     940 from     2141 [ 43.90 %]      0 clones [ 0.00 %], purity: 99.45 %, hitEff: 99.17 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   11_UT+T_SfromDB               :    2236 from     4549 [ 49.15 %]      0 clones [ 0.00 %], purity: 99.56 %, hitEff: 99.38 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   12_UT+T_SfromDB_P>5GeV        :    1374 from     2463 [ 55.79 %]      0 clones [ 0.00 %], purity: 99.50 %, hitEff: 99.33 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   13_noVelo+UT+T_SfromDB        :    1117 from     2688 [ 41.56 %]      0 clones [ 0.00 %], purity: 99.54 %, hitEff: 99.25 %
+Hlt2DebugTracking_DownstreamTrac...    INFO   14_noVelo+UT+T_SfromDB_P>5GeV :     744 from     1507 [ 49.37 %]      0 clones [ 0.00 %], purity: 99.46 %, hitEff: 99.17 %
+Hlt2DebugTracking_DownstreamTrac...    INFO 
+Hlt2DebugTracking_GraphClustering      INFO Built <0> graph calo clustering clusters/event 
+Hlt2DebugTracking_SeedTrackChecker     INFO Results
+Hlt2DebugTracking_SeedTrackChecker     INFO **** Seed                          2993009 tracks including          55220 ghosts [ 1.84 %], Event average  1.00 % ****
+Hlt2DebugTracking_SeedTrackChecker     INFO   01_hasT                        : 2106141 from  3461402 [ 60.85 %]     34 clones [ 0.00 %], purity: 99.67 %, hitEff: 98.26 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   02_long                        : 1500374 from  2196366 [ 68.31 %]     16 clones [ 0.00 %], purity: 99.75 %, hitEff: 98.71 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   03_long_P>5GeV                 :  985974 from  1406949 [ 70.08 %]      8 clones [ 0.00 %], purity: 99.73 %, hitEff: 99.26 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   04_long_fromB                  :    2534 from     3535 [ 71.68 %]      0 clones [ 0.00 %], purity: 99.75 %, hitEff: 98.79 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   05_long_fromB_P>5GeV           :    1806 from     2456 [ 73.53 %]      0 clones [ 0.00 %], purity: 99.71 %, hitEff: 99.18 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   06_UT+T_strange                :  175231 from   257486 [ 68.05 %]      2 clones [ 0.00 %], purity: 99.76 %, hitEff: 98.39 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   07_UT+T_strange_P>5GeV         :   90884 from   128200 [ 70.89 %]      0 clones [ 0.00 %], purity: 99.76 %, hitEff: 99.27 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   08_noVelo+UT+T_strange         :   93319 from   136694 [ 68.27 %]      2 clones [ 0.00 %], purity: 99.76 %, hitEff: 98.38 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   09_noVelo+UT+T_strange_P>5GeV  :   50554 from    71293 [ 70.91 %]      0 clones [ 0.00 %], purity: 99.76 %, hitEff: 99.24 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   10_UT+T_SfromDB                :    3091 from     4549 [ 67.95 %]      0 clones [ 0.00 %], purity: 99.77 %, hitEff: 98.52 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   11_UT+T_SfromDB_P>5GeV         :    1761 from     2463 [ 71.50 %]      0 clones [ 0.00 %], purity: 99.77 %, hitEff: 99.18 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   12_noVelo+UT+T_SfromDB_P>5GeV  :    1064 from     1507 [ 70.60 %]      0 clones [ 0.00 %], purity: 99.76 %, hitEff: 99.12 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   13_hasT_electrons              :  396091 from  1068984 [ 37.05 %]      7 clones [ 0.00 %], purity: 99.73 %, hitEff: 97.62 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   14_long_electrons              :  107162 from   171504 [ 62.48 %]      0 clones [ 0.00 %], purity: 99.80 %, hitEff: 97.97 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   15_long_fromB_electrons        :     232 from      370 [ 62.70 %]      0 clones [ 0.00 %], purity: 99.89 %, hitEff: 98.23 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   16_long_electrons_P>5GeV       :   58548 from    89384 [ 65.50 %]      0 clones [ 0.00 %], purity: 99.79 %, hitEff: 98.82 %
+Hlt2DebugTracking_SeedTrackChecker     INFO   17_long_fromB_electrons_P>5GeV :     154 from      241 [ 63.90 %]      0 clones [ 0.00 %], purity: 99.84 %, hitEff: 98.83 %
+Hlt2DebugTracking_SeedTrackChecker     INFO 
+HLTControlFlowMgr                      INFO Memory pool: used 4.36178 +/- 0.00142435 MiB (min: 2, max: 5) in 1 +/- 0 blocks (allocated >once in 0 +/- 0% events). Allocated capacity was 10 +/- 0 MiB (min: 10, max: 10) and 757.041 +/- 0.31231 (min: 282, max: 893) requests were served
+HLTControlFlowMgr                      INFO Timing table:
+HLTControlFlowMgr                      INFO 
+ | Name of Algorithm                                                             | Execution Count | Total Time / s  | Avg. Time / us   |
+ | Sum of all Algorithms                                                         |           50000 |       10530.186 |       210603.727 |
+ | "RootIOAlg"                                                                   |           50000 |        8852.445 |       177048.909 |
+ | "Hlt2DebugTracking_SeedTrackChecker"                                          |           49170 |         224.676 |         4569.365 |
+ | "Hlt2DebugTracking_DownstreamTrackChecker"                                    |           49170 |         146.199 |         2973.330 |
+ | "Hlt2DebugTracking_PrKalmanFilterMatch"                                       |           49170 |         126.790 |         2578.610 |
+ | "Hlt2DebugTracking_PrHybridSeeding"                                           |           49170 |         108.145 |         2199.409 |
+ | "Hlt2DebugTracking_PrLongLivedTracking"                                       |           49170 |          87.211 |         1773.664 |
+ | "Hlt2DebugTracking_PrForwardTrackingVelo"                                     |           49170 |          87.174 |         1772.912 |
+ | "Hlt2DebugTracking_PrTrackRecoDumper"                                         |           49170 |          77.975 |         1585.815 |
+ | "Hlt2DebugTracking_PrKalmanFilterForward"                                     |           49170 |          64.043 |         1302.480 |
+ | "Hlt2DebugTracking_RichPhotonRecoLong"                                        |           49170 |          53.416 |         1086.346 |
+ | "PrLHCbID2MCParticleVPUTFTMU_28d17487"                                        |           49170 |          47.196 |          959.850 |
+ | "Hlt2DebugTracking_RichMassConesLong"                                         |           49170 |          46.255 |          940.716 |
+ | "Unpack__Event_MC_Vertices"                                                   |           49170 |          45.405 |          923.421 |
+ | "Unpack__Event_MC_Particles"                                                  |           49170 |          44.404 |          903.079 |
+ | "Hlt2DebugTracking_PrLHCbID2MCParticle"                                       |           49170 |          35.542 |          722.845 |
+ | "LHCb__SelectivePacker_1542a0b4"                                              |           49170 |          34.300 |          697.574 |
+ | "Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP"  |           49170 |          32.948 |          670.085 |
+ | "Hlt2DebugTracking_RichTrackSegmentsLong"                                     |           49170 |          24.199 |          492.154 |
+ | "Hlt2DebugTracking_PrStoreSciFiHits"                                          |           49170 |          23.888 |          485.825 |
+ | "Hlt2DebugTracking_RichSIMDPixels"                                            |           49170 |          23.336 |          474.604 |
+ | "Hlt2DebugTracking_VeloClusterTrackingSIMD"                                   |           50000 |          18.058 |          361.154 |
+ | "Hlt2DebugTracking_VPClusFull"                                                |           49170 |          15.316 |          311.486 |
+ | "Hlt2DebugTracking_UTHitClustersToUTHitHandlerConverter"                      |           49170 |          14.857 |          302.162 |
+ | "Hlt2DebugTracking_RichPredPixelSignalLong"                                   |           49170 |          12.987 |          264.132 |
+ | "Hlt2DebugTracking_RichRawDecoder"                                            |           49170 |          12.907 |          262.494 |
+ | "Hlt2DebugTracking_VPFullCluster2MCParticleLinker"                            |           49170 |          12.622 |          256.699 |
+ | "Hlt2DebugTracking_CaloTrackBasedElectronShowerAlg_Long"                      |           49170 |          12.136 |          246.818 |
+ | "Hlt2DebugTracking_fromPrVeloTracksV1TracksMerger"                            |           50000 |          11.085 |          221.698 |
+ | "Hlt2DebugTracking_RichGPIDLikelihoodIt1Long"                                 |           49170 |           9.997 |          203.316 |
+ | "Hlt2DebugTracking_ChargedProtoParticleMaker_Long"                            |           49170 |           9.103 |          185.134 |
+ | "FTRawBankDecoder"                                                            |           49170 |           8.923 |          181.470 |
+ | "Hlt2DebugTracking_PrStoreUTHitClusters"                                      |           49170 |           8.728 |          177.502 |
+ | "Hlt2DebugTracking_MuonRawInUpgradeToHits"                                    |           49170 |           8.220 |          167.181 |
+ | "Hlt2DebugTracking_RichGPIDLikelihoodIt0Long"                                 |           49170 |           7.558 |          153.713 |
+ | "Hlt2DebugTracking_PrCloneKillerSeed"                                         |           49170 |           7.012 |          142.617 |
+ | "Hlt2DebugTracking_PrVPHitsToVPLightClusters"                                 |           50000 |           6.877 |          137.537 |
+ | "Hlt2DebugTracking_MuonIDHlt2AlgLong"                                         |           49170 |           6.699 |          136.242 |
+ | "Hlt2DebugTracking_RichGeomEffLong"                                           |           49170 |           5.996 |          121.950 |
+ | "Hlt2DebugTracking_TBTC_Match"                                                |           49170 |           5.844 |          118.855 |
+ | "Hlt2DebugTracking_CloneKillerForward"                                        |           49170 |           5.691 |          115.739 |
+ | "Hlt2DebugTracking_GraphClustering"                                           |           49170 |           5.668 |          115.263 |
+ | "Hlt2DebugTracking_RichPixelClustering"                                       |           49170 |           5.370 |          109.203 |
+ | "Hlt2DebugTracking_fromPrSeedingTracksV1Tracks_2"                             |           49170 |           5.267 |          107.111 |
+ | "PrTrackAssociator_c955b3bf"                                                  |           49170 |           4.696 |           95.502 |
+ | "Hlt2DebugTracking_UTHitClustersToPrUTHitsConverter"                          |           49170 |           4.473 |           90.962 |
+ | "Hlt2DebugTracking_fromPrDownstreamTracksV1Tracks"                            |           49170 |           4.196 |           85.337 |
+ | "Hlt2DebugTracking_CaloSelectiveBremMatchAlg_Long"                            |           49170 |           3.903 |           79.383 |
+ | "Hlt2DebugTracking_LHCb__Converters__Track__SOA__fromV1Track_2"               |           49170 |           3.773 |           76.732 |
+ | "Hlt2DebugTracking_TrackBeamLineVertexFinderSoA"                              |           50000 |           3.479 |           69.573 |
+ | "HltPackedBufferWriter_2c57eb74"                                              |           49170 |           3.437 |           69.909 |
+ | "Hlt2DebugTracking_RichPixBackgroundsIt0Long"                                 |           49170 |           3.326 |           67.634 |
+ | "Hlt2DebugTracking_PrMatchNN"                                                 |           49170 |           3.321 |           67.547 |
+ | "Hlt2DebugTracking_RichTrackGloPointsLong"                                    |           49170 |           3.297 |           67.043 |
+ | "Hlt2DebugTracking_RichPixBackgroundsIt1Long"                                 |           49170 |           3.248 |           66.058 |
+ | "Hlt2DebugTracking_PrTrackAssociator_2"                                       |           49170 |           3.219 |           65.475 |
+ | "Hlt2DebugTracking_PersistableVeloTracksContainer"                            |           50000 |           3.150 |           62.992 |
+ | "Hlt2DebugTracking_RichRecSummaryLong"                                        |           49170 |           2.836 |           57.674 |
+ | "Hlt2DebugTracking_PrTrackAssociator_1"                                       |           49170 |           2.816 |           57.280 |
+ | "Hlt2DebugTracking_fromPrSeedingTracksV1Tracks_1"                             |           49170 |           2.538 |           51.626 |
+ | "Hlt2DebugTracking_CaloAcceptanceEcalAlg_Long"                                |           49170 |           2.386 |           48.516 |
+ | "Hlt2DebugTracking_TBTCForward"                                               |           49170 |           2.318 |           47.142 |
+ | "Hlt2DebugTracking_CaloChargedPIDsAlg_Long"                                   |           49170 |           2.153 |           43.794 |
+ | "CopySignalMCParticles_daf3c6a8"                                              |           49170 |           2.098 |           42.666 |
+ | "Hlt2DebugTracking_TrackContainersMerger"                                     |           49170 |           2.015 |           40.984 |
+ | "Hlt2DebugTracking_RichEmittedCKAnglesLong"                                   |           49170 |           1.961 |           39.882 |
+ | "Hlt2DebugTracking_CaloSelectiveTrackMatchAlg_Long"                           |           49170 |           1.893 |           38.491 |
+ | "Hlt2DebugTracking_PersistableLongTracksContainer"                            |           49170 |           1.847 |           37.569 |
+ | "Hlt2DebugTracking_VPLightClustersToVPMicroClustersConverter"                 |           50000 |           1.646 |           32.915 |
+ | "Hlt2DebugTracking_CaloTrackToHcalEnergyAlg_Long"                             |           49170 |           1.640 |           33.352 |
+ | "Hlt2DebugTracking_CaloAcceptanceHcalAlg_Long"                                |           49170 |           1.616 |           32.858 |
+ | "ChargedProtoParticleAssociator_b15c4072"                                     |           49170 |           1.575 |           32.029 |
+ | "Hlt2DebugTracking_RichSignalCKAnglesLong"                                    |           49170 |           1.538 |           31.287 |
+ | "UnpackRawEvent_ODIN"                                                         |           50000 |           1.443 |           28.865 |
+ | "Hlt2DebugTracking_RichPIDsWriterLong"                                        |           49170 |           1.357 |           27.607 |
+ | "Hlt2DebugTracking_LHCb__Converters__Track__SOA__fromV1Track_1"               |           49170 |           1.213 |           24.664 |
+ | "Hlt2DebugTracking_ChargedProtoParticleMaker_Downstream"                      |           49170 |           1.103 |           22.441 |
+ | "Hlt2DebugTracking_CaloAcceptanceBremAlg_Long"                                |           49170 |           1.080 |           21.964 |
+ | "Hlt2DebugTracking_RichDetectableYieldsLong"                                  |           49170 |           0.939 |           19.087 |
+ | "Hlt2DebugTracking_CaloSelectiveTrackMatchAlg_Ttrack"                         |           49170 |           0.896 |           18.218 |
+ | "HltDecReportsWriter_56ed45a5"                                                |           49170 |           0.882 |           17.931 |
+ | "Hlt2DebugTracking_ClassifyPhotonElectronAlg"                                 |           49170 |           0.849 |           17.260 |
+ | "Hlt2DebugTracking_RichEmittedYieldsLong"                                     |           49170 |           0.828 |           16.839 |
+ | "FutureEcalZSup"                                                              |           49170 |           0.821 |           16.701 |
+ | "Hlt2DebugTracking_CaloSelectiveBremMatchAlg_Downstream"                      |           49170 |           0.776 |           15.777 |
+ | "Hlt2DebugTracking_CaloAcceptanceEcalAlg_Ttrack"                              |           49170 |           0.743 |           15.113 |
+ | "MergeRelationTable_Relations_ChargedPP2MCP"                                  |           49170 |           0.733 |           14.914 |
+ | "Hlt2DebugTracking_ChargedProtoParticleMaker_Upstream"                        |           49170 |           0.733 |           14.899 |
+ | "Hlt2DebugTracking_CaloFutureMergedPi0"                                       |           49170 |           0.723 |           14.700 |
+ | "Pack__Event_HLT2_MC_Particles"                                               |           49170 |           0.721 |           14.660 |
+ | "ChargedProtoParticleAssociator_3623f58d"                                     |           49170 |           0.721 |           14.654 |
+ | "Hlt2DebugTracking_RecSummaryMaker"                                           |           49170 |           0.719 |           14.613 |
+ | "Hlt2DebugTracking_RichCKResolutionsLong"                                     |           49170 |           0.692 |           14.074 |
+ | "Hlt2DebugTracking_LHCb__Converters__Track__SOA__fromV1Track_4"               |           49170 |           0.684 |           13.910 |
+ | "Hlt2DebugTracking_PersistableTtrackTracksContainer"                          |           49170 |           0.680 |           13.834 |
+ | "Hlt2DebugTracking_CaloChargedBremAlg_Long"                                   |           49170 |           0.677 |           13.760 |
+ | "Hlt2DebugTracking_NeutralProtoPAlg"                                          |           49170 |           0.665 |           13.525 |
+ | "Hlt2DebugTracking_UniqueIDGeneratorAlg"                                      |           49170 |           0.663 |           13.476 |
+ | "Hlt2DebugTracking_PrStoreUTHitClustersEmptyProducer"                         |           50000 |           0.659 |           13.179 |
+ | "Hlt2DebugTracking_PVToRecConverterV1"                                        |           50000 |           0.648 |           12.968 |
+ | "Pack__Event_HLT2_MC_Vertices"                                                |           49170 |           0.648 |           13.172 |
+ | "reserveIOV"                                                                  |           50000 |           0.642 |           12.840 |
+ | "Hlt2DebugTracking_CaloChargedPIDsAlg_Downstream"                             |           49170 |           0.622 |           12.647 |
+ | "Hlt2DebugTracking_CaloSelectiveBremMatchAlg_Upstream"                        |           49170 |           0.613 |           12.476 |
+ | "Hlt2DebugTracking_fromV2MuonPIDV1MuonPIDLong"                                |           49170 |           0.612 |           12.448 |
+ | "Hlt2DebugTracking_ChargedCaloPIDsConverter_Long"                             |           49170 |           0.579 |           11.772 |
+ | "Hlt2DebugTracking_RichSignalYieldsLong"                                      |           49170 |           0.557 |           11.328 |
+ | "Hlt2DebugTracking_MuonPIDV2ToMuonTracks_Long"                                |           49170 |           0.550 |           11.182 |
+ | "Hlt2DebugTracking_BremInfosConverter_Long"                                   |           49170 |           0.513 |           10.442 |
+ | "Hlt2DebugTracking_ClusterNeutralityClassifierAlg"                            |           49170 |           0.506 |           10.296 |
+ | "LHCb__Converters__Calo__Hypo2TruthTable__v1__fromV2_b965cacc"                |           49170 |           0.496 |           10.090 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_5"                |           49170 |           0.470 |            9.555 |
+ | "Hlt2DebugTracking_CaloFutureClusterCovarianceAlg"                            |           49170 |           0.468 |            9.521 |
+ | "Hlt2DebugTracking_LHCb__Converters__Track__SOA__fromV1Track_3"               |           49170 |           0.461 |            9.379 |
+ | "Hlt2DebugTracking_CaloChargedBremAlg_Downstream"                             |           49170 |           0.455 |            9.261 |
+ | "Hlt2DebugTracking_CaloSelectiveElectronMatchAlg_Downstream"                  |           49170 |           0.451 |            9.181 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Cluster__v1__fromV2_2"             |           49170 |           0.451 |            9.164 |
+ | "Hlt2DebugTracking_CaloTrackBasedElectronShowerAlg_Downstream"                |           49170 |           0.448 |            9.111 |
+ | "Hlt2DebugTracking_RichTrackLocPointsLong"                                    |           49170 |           0.443 |            9.017 |
+ | "CaloFutureDigit2MCLinks2Table_b717ec76"                                      |           49170 |           0.436 |            8.864 |
+ | "Hlt2DebugTracking_PrStorePrUTHitsEmptyProducer"                              |           49170 |           0.420 |            8.534 |
+ | "Hlt2DebugTracking_ChargedCaloPIDsConverter_Downstream"                       |           49170 |           0.405 |            8.231 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2"       |           49170 |           0.404 |            8.213 |
+ | "CaloClusterMCTruth_b1e9f302"                                                 |           49170 |           0.398 |            8.085 |
+ | "FutureHcalZSup"                                                              |           49170 |           0.397 |            8.081 |
+ | "NeutralProtoParticleAssociator_75b777e9"                                     |           49170 |           0.390 |            7.924 |
+ | "Hlt2DebugTracking_CaloChargedBremAlg_Upstream"                               |           49170 |           0.385 |            7.827 |
+ | "Hlt2DebugTracking_RichGPIDInitLong"                                          |           49170 |           0.382 |            7.760 |
+ | "Hlt2DebugTracking_CaloMergeTrackMatchTables"                                 |           49170 |           0.359 |            7.307 |
+ | "Decode_ODIN"                                                                 |           50000 |           0.348 |            6.969 |
+ | "PrTrackAssociator_615f5a8d"                                                  |           49170 |           0.339 |            6.898 |
+ | "MergeLinksByKeysToVector_2a819c34"                                           |           49170 |           0.334 |            6.800 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_2"                |           49170 |           0.330 |            6.717 |
+ | "ChargedProtoParticleAssociator_90409e29"                                     |           49170 |           0.330 |            6.714 |
+ | "LHCb__Converters__Calo__Hypo2TruthTable__v1__fromV2_798d3ded"                |           49170 |           0.329 |            6.682 |
+ | "Hlt2DebugTracking_RichTkSegmentSelLong"                                      |           49170 |           0.320 |            6.516 |
+ | "ExecutionReportsWriter_9918c605"                                             |           49250 |           0.315 |            6.402 |
+ | "Hlt2DebugTracking_RichPIDsEmptyProducer_Downstream"                          |           49170 |           0.310 |            6.311 |
+ | "Hlt2DebugTracking_CaloTrackToHcalEnergyAlg_Downstream"                       |           49170 |           0.293 |            5.961 |
+ | "Hlt2DebugTracking_BremInfosConverter_Downstream"                             |           49170 |           0.282 |            5.738 |
+ | "CaloFutureHypoMCTruth_ead6188f"                                              |           49170 |           0.281 |            5.709 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Cluster__v1__fromV2_1"             |           49170 |           0.278 |            5.654 |
+ | "Hlt2DebugTracking_CaloSelectiveElectronMatchAlg_Long"                        |           49170 |           0.270 |            5.484 |
+ | "Hlt2DebugTracking_CaloAcceptanceHcalAlg_Downstream"                          |           49170 |           0.267 |            5.423 |
+ | "Hlt2DebugTracking_CaloAcceptanceBremAlg_Upstream"                            |           49170 |           0.264 |            5.369 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_4"                |           49170 |           0.262 |            5.330 |
+ | "PrTrackAssociator_ebb7345a"                                                  |           49170 |           0.250 |            5.088 |
+ | "Hlt2DebugTracking_CaloSelectiveTrackMatchAlg_Downstream"                     |           49170 |           0.244 |            4.972 |
+ | "Hlt2DebugTracking_BremInfosConverter_Upstream"                               |           49170 |           0.239 |            4.852 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_3"                |           49170 |           0.236 |            4.794 |
+ | "Hlt2DebugTracking_CaloAcceptanceBremAlg_Downstream"                          |           49170 |           0.227 |            4.619 |
+ | "Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_1"                |           49170 |           0.225 |            4.579 |
+ | "MergeLinksByKeysToVector_675fae86"                                           |           49170 |           0.225 |            4.571 |
+ | "UnpackRawEvent_EcalPacked"                                                   |           49170 |           0.223 |            4.543 |
+ | "CaloFutureHypoMCTruth_9bf451df"                                              |           49170 |           0.215 |            4.365 |
+ | "Hlt2DebugTracking_FTRawBankDecoderEmptyProducer"                             |           50000 |           0.202 |            4.036 |
+ | "MergeLinksByKeysToVector_51015474"                                           |           49170 |           0.193 |            3.919 |
+ | "MergeLinksByKeysToVector_a4679b03"                                           |           49170 |           0.189 |            3.851 |
+ | "UnpackRawEvent_UT"                                                           |           49170 |           0.189 |            3.845 |
+ | "Hlt2DebugTracking_CaloAcceptanceEcalAlg_Downstream"                          |           49170 |           0.180 |            3.665 |
+ | "UnpackRawEvent_FTCluster"                                                    |           49170 |           0.174 |            3.538 |
+ | "Hlt2DebugTracking_RichPIDsEmptyProducer_Upstream"                            |           49170 |           0.168 |            3.421 |
+ | "require_pvs"                                                                 |           50000 |           0.157 |            3.144 |
+ | "Hlt2DebugTracking_PersistableDownstreamEmptyTracksContainer"                 |           49170 |           0.157 |            3.186 |
+ | "UnpackRawEvent_Rich"                                                         |           49170 |           0.154 |            3.132 |
+ | "HltDecReportsFilter_4ab39fa2"                                                |           49170 |           0.153 |            3.108 |
+ | "UnpackRawEvent_Muon"                                                         |           49170 |           0.144 |            2.928 |
+ | "UnpackRawEvent_VP"                                                           |           50000 |           0.144 |            2.879 |
+ | "FakeRunNumberProducer"                                                       |           50000 |           0.144 |            2.873 |
+ | "HLT2PrescaleDecReportsMonitor"                                               |           50000 |           0.144 |            2.870 |
+ | "UnpackRawEvent_EcalPackedError"                                              |           49170 |           0.138 |            2.815 |
+ | "MergeRelationTable_Relations_NeutralPP2MCP"                                  |           49170 |           0.134 |            2.733 |
+ | "UnpackRawEvent_HcalPackedError"                                              |           49170 |           0.125 |            2.551 |
+ | "UnpackRawEvent_HcalPacked"                                                   |           49170 |           0.121 |            2.451 |
+ | "UnpackRawEvent_MuonError"                                                    |           49170 |           0.118 |            2.394 |
+ | "UnpackRawEvent_UTError"                                                      |           49170 |           0.110 |            2.245 |
+ | "Hlt2DebugTracking_PersistableUpstreamEmptyTracksContainer"                   |           49170 |           0.102 |            2.069 |
+ | "Hlt2DebugTracking_Prescaler"                                                 |           50000 |           0.101 |            2.017 |
+ | "HLT2DecReportsMonitor"                                                       |            5042 |           0.031 |            6.213 |
+ | "HLT2PostscaleDecReportsMonitor"                                              |            5042 |           0.007 |            1.292 |
+
+HLTControlFlowMgr                      INFO StateTree: CFNode   #executed  #passed
+LAZY_AND: moore                                                                                                                 #=50000   Sum=49170       Eff=|( 98.34000 +- 0.0571392)%|
+ NONLAZY_OR: lines                                                                                                              #=50000   Sum=49170       Eff=|( 98.34000 +- 0.0571392)%|
+  NONLAZY_OR: hlt_decision                                                                                                      #=50000   Sum=49170       Eff=|( 98.34000 +- 0.0571392)%|
+   LAZY_AND: Hlt2DebugTrackingDecisionWithOutput                                                                                #=50000   Sum=49170       Eff=|( 98.34000 +- 0.0571392)%|
+    LAZY_AND: Hlt2DebugTracking                                                                                                 #=50000   Sum=49170       Eff=|( 98.34000 +- 0.0571392)%|
+     DeterministicPrescaler/Hlt2DebugTracking_Prescaler                                                                         #=50000   Sum=50000       Eff=|( 100.0000 +- 0.00000 )%|
+     VoidFilter/require_pvs                                                                                                     #=50000   Sum=49170       Eff=|( 98.34000 +- 0.0571392)%|
+     PrTrackChecker/Hlt2DebugTracking_SeedTrackChecker                                                                          #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     PrTrackChecker/Hlt2DebugTracking_DownstreamTrackChecker                                                                    #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     PrTrackRecoDumper/Hlt2DebugTracking_PrTrackRecoDumper                                                                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+    NONLAZY_OR: Hlt2DebugTrackingOutput                                                                                         #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     TrackContainersMerger/Hlt2DebugTracking_PersistableVeloTracksContainer                                                     #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     TrackContainersMerger/Hlt2DebugTracking_PersistableTtrackTracksContainer                                                   #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     PVToRecConverterV1/Hlt2DebugTracking_PVToRecConverterV1                                                                    #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     NeutralProtoPAlg/Hlt2DebugTracking_NeutralProtoPAlg                                                                        #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     TrackContainersMerger/Hlt2DebugTracking_PersistableLongTracksContainer                                                     #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     TracksEmptyProducer/Hlt2DebugTracking_PersistableDownstreamEmptyTracksContainer                                            #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     TracksEmptyProducer/Hlt2DebugTracking_PersistableUpstreamEmptyTracksContainer                                              #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     FunctionalChargedProtoParticleMaker/Hlt2DebugTracking_ChargedProtoParticleMaker_Long                                       #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     FunctionalChargedProtoParticleMaker/Hlt2DebugTracking_ChargedProtoParticleMaker_Downstream                                 #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     FunctionalChargedProtoParticleMaker/Hlt2DebugTracking_ChargedProtoParticleMaker_Upstream                                   #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     LHCb::Converters::Calo::Hypo::v1::fromV2/Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_1                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     LHCb::Converters::Calo::Hypo::v1::fromV2/Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__fromV2_5                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     LHCb::Converters::Calo::Hypo::v1::MergedPi0::fromV2/Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2  #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     LHCb::Converters::Calo::Hypo::v1::MergedPi0::fromV2/Hlt2DebugTracking_LHCb__Converters__Calo__Hypo__v1__MergedPi0__fromV2  #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     RecSummaryMaker/Hlt2DebugTracking_RecSummaryMaker                                                                          #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+  LAZY_AND: monitor_decisions                                                                                                   #=50000   Sum=0           Eff=|( 0.000000 +- 0.00000 )%|
+   DeterministicPrescaler/HLT2PrescaleDecReportsMonitor                                                                         #=50000   Sum=5042        Eff=|( 10.08400 +- 0.134664)%|
+   HltDecReportsMonitor/HLT2DecReportsMonitor                                                                                   #=5042    Sum=5042        Eff=|( 100.0000 +- 0.00000 )%|
+   DeterministicPrescaler/HLT2PostscaleDecReportsMonitor                                                                        #=5042    Sum=0           Eff=|( 0.000000 +- 0.00000 )%|
+ NONLAZY_OR: report_writers                                                                                                     #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+  ExecutionReportsWriter/ExecutionReportsWriter_9918c605                                                                        #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+  HltDecReportsWriter/HltDecReportsWriter_56ed45a5                                                                              #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+ NONLAZY_OR: stream_writers                                                                                                     #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+  LAZY_AND: default_writer                                                                                                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+   HltDecReportsFilter/HltDecReportsFilter_4ab39fa2                                                                             #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+   NONLAZY_OR: default_line_output_persistence                                                                                  #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+    NONLAZY_OR: truth_matching                                                                                                  #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_ChargedPP2MCP                                                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     MergeRelationsTablesPP2MCP/MergeRelationTable_Relations_NeutralPP2MCP                                                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+    NONLAZY_OR: mc_packers                                                                                                      #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     CopyMCRelationsTargets/Copy_MC_For__Event_Relations_ChargedPP2MCP___Event_Relations_NeutralPP2MCP                          #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     CopySignalMCParticles/CopySignalMCParticles_daf3c6a8                                                                       #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     PackMCParticle/Pack__Event_HLT2_MC_Particles                                                                               #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+     PackMCVertex/Pack__Event_HLT2_MC_Vertices                                                                                  #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+    HltPackedBufferWriter/HltPackedBufferWriter_2c57eb74                                                                        #=49170   Sum=49170       Eff=|( 100.0000 +- 0.00000 )%|
+
+HLTControlFlowMgr                      INFO Histograms converted successfully according to request.
+ToolSvc                                INFO Removing all tools created by ToolSvc
+Hlt2DebugTracking_DownstreamTrac... SUCCESS Booked 598 Histogram(s) : 1D=425 2D=173 
+Hlt2DebugTracking_SeedTrackCheck... SUCCESS Booked 721 Histogram(s) : 1D=512 2D=209 
+HltANNSvc                           WARNING key 0x0889dbb8 has an explicitly configured overrule -- using that...
+HltANNSvc                           WARNING key 0x84a718f6 has an explicitly configured overrule -- using that...
+ApplicationMgr                         INFO Application Manager Finalized successfully
+ApplicationMgr                         INFO Application Manager Terminated successfully
